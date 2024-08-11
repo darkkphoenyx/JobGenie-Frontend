@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* colors */
+  --color-text: #2d82ff;
+  /* rgb value= 45,132,255 */
+}
