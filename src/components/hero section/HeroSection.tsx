@@ -2,7 +2,7 @@ export default function HeroSection() {
   const header = "font-medium text-5xl my-5";
   return (
     <>
-      <div className="main text-center mx-auto py-20 w-full">
+      <div className="main text-center mx-auto py-24 w-full h-[88vh]">
         <span className=" flex justify-center items-center">
           <span className="flex text-[--color-text] bg-blue-100/30 border border-[--color-text] rounded-3xl px-5 py-2">
             <img

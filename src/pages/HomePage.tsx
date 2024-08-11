@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import HeroSection from "../components/hero section/HeroSection";
+import { JobCard } from "../components/cards/JobCard";
 
 export default function HomePage() {
   return (
@@ -63,6 +64,9 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+        <div id="jobs">
+          <JobCard />
         </div>
       </div>
     </>

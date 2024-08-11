@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import { FooterNav } from "../cards/FooterNav";
 
 export default function Footer() {
   return (
     <>
-      <div className="bg-blue-500/10 pt-10">
-        <div className="container mx-auto py-5 bg-white grid-cols-2 flex justify-between items-center px-10 rounded-2xl">
+      <FooterNav />
+      <div className=" pt-10">
+        <div className="container mx-auto py-5 bg-gray-100/70 grid-cols-2 flex justify-between items-center px-10 rounded-2xl">
           <div className="company-location-section grid-rows-2">
             <div className="logo_section flex">
               <img
@@ -12,14 +14,17 @@ export default function Footer() {
                 src="/assets/favicon.ico"
                 alt="company logo"
               />
-              <div>
-                <h1 className="font-semibold  pl-2">JobGenie</h1>
-                <p className="text-xs pl-2 text-gray-400">
-                  The Ultimate for Job Seekers
-                </p>
-              </div>
+
+              <Link to={"/"}>
+                <div className="company-name">
+                  <h1 className="font-semibold  pl-2">JobGenie</h1>
+                  <p className="text-xs pl-2 text-gray-400">
+                    The Ultimate for Job Seekers
+                  </p>
+                </div>
+              </Link>
             </div>
-            <div className="text-gray-400 mt-3">
+            <div className="company-address text-gray-400 mt-3">
               <h1 className="text-gray-500 text-sm">Mitrapark-10, Chabahil</h1>
               <h1 className="text-gray-500 text-sm">Kathmandu, Nepal</h1>
             </div>
@@ -38,9 +43,11 @@ export default function Footer() {
                   placeholder="Whats your work email?"
                 />
               </div>
-              <button className="hover:text-[--color-text] hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
-                Subscribe
-              </button>
+              <Link to={"#"}>
+                <button className="hover:text-[--color-text] hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
+                  Subscribe
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -77,22 +84,24 @@ export default function Footer() {
         </div>
         <div className="footer-bottom flex justify-between container mx-auto text-gray-500 py-5">
           <div className="social-links">
-            <ul className="flex gap-20">
-              <li>
+            <ul className="flex gap-20 ">
+              <li className="hover:underline">
                 <a href="#">Instagram</a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a href="#">Twitter</a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a href="#">Facebook</a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a href="#">LinkedIn</a>
               </li>
             </ul>
           </div>
-          <div className="copyrights">JobGenie 2024. all Rights Reserved</div>
+          <div className="copyrights hover:underline">
+            JobGenie 2024. all Rights Reserved
+          </div>
         </div>
       </div>
     </>
