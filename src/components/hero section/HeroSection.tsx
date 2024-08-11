@@ -28,7 +28,7 @@ export default function HeroSection() {
         </div>
         <div className="mid-section h-[88vh] pt-16">
           <span className=" flex justify-center items-center">
-            <span className="flex text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl px-5 py-2">
+            <span className="flex text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl px-5 py-2 mb-5">
               <img
                 className="pr-3"
                 src="/assets/thumbs-up.svg"
@@ -39,7 +39,7 @@ export default function HeroSection() {
           </span>
           <h1 className={header}>Supporting Job Seekeers</h1>
           <h1 className={header}>Every Steps of the Way</h1>
-          <p className="w-2/5 mx-auto text-gray-500 ">
+          <p className="w-4/5 mt-7 mx-auto text-gray-500 ">
             Unlock your true potential and discover a world of opportunities
             that align with your skills, interests, and aspirations
           </p>
