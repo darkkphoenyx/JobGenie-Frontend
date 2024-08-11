@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link } from "react-router-dom";
 
-const navElements = [
+const footerNavElements = [
   {
     id: 1,
     title: "Explores",
@@ -178,7 +178,7 @@ export const FooterNav = () => {
     <>
       <div className="container mx-auto flex justify-center my-10 px-16">
         <ul className="grid-cols-5 grid gap-x-20 gap-y-12">
-          {navElements.map((item) => (
+          {footerNavElements.map((item) => (
             <li key={item.id}>
               <div>
                 <h1 className="font-bold mb-2">{item.title}</h1>

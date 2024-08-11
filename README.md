@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Job Genie
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[JobGennie ](https://jobgenie-website.vercel.app/) is a modern job search platform designed to connect job seekers with top companies across various industries. The homepage features a clean, user-friendly interface, showcasing a curated list of job openings from reputable companies.
 
-Currently, two official plugins are available:
+## JobGenie previews
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+<img src="./gitassets/page1.png" alt="page1 png"/>
+<p align="center">
+<img src="./gitassets/page2.png" alt="page2 png"/>
+</p>
+<p align="center">
+<img src="./gitassets/page3.png" alt="page3 png"/>
+</p>
 
-## Expanding the ESLint configuration
+## Features of the JobGenie:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 100% Job Graunted
+- Better Environment
+- Good Learning Environment
+- 24/7 Tech Support
 
-- Configure the top-level `parserOptions` property like this:
+## Author
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+[@darkkphoenyx](https://github.com/darkkphoenyx)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contact Me
+
+Porfolio: [@darkkphoenyx](https://darkkphoenyx-portfolio.vercel.app/)  
+LinkedIn: [@deepeshsunuwar](https://www.linkedin.com/in/deepesh-sunuwar-6237351aa/)  
+Facebook: [@deepeshsunuwar](https://www.facebook.com/deepesh.singhsunuwar)  
+E-mail: deepgeneral33@gmail.com
