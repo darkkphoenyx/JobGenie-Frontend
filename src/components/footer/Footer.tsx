@@ -7,7 +7,7 @@ export default function Footer() {
       <FooterNav />
       <div className=" pt-10">
         <div className="container mx-auto py-5 bg-gray-100/70 grid-cols-2 flex justify-between items-center px-10 rounded-2xl">
-          <div className="company-location-section grid-rows-2">
+          <div className="company-location-section">
             <div className="logo_section flex">
               <img
                 className="object-fill h-10 w-10"
@@ -29,13 +29,13 @@ export default function Footer() {
               <h1 className="text-gray-500 text-sm">Kathmandu, Nepal</h1>
             </div>
           </div>
-          <div className="newsletter-section w-2/5">
+          <div className="newsletter-section w-2/5 pl-16">
             <h1 className="text-3xl font-medium">Newsletter</h1>
             <p className="text-gray-500 text-sm">
               Subscribe to our newletter to get the latest JobGenie news
             </p>
             <div className="flex mt-3">
-              <div className="flex  bg-white border border-gray-300 rounded-3xl px-4 w-[300px] mr-3">
+              <div className="flex bg-white border border-gray-300 rounded-3xl px-4 w-[300px] mr-3">
                 <img className="pr-2" src="/assets/mail.svg" alt="mail icon" />
                 <input
                   className="outline-none text-sm bg-white py-3 w-full"
