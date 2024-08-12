@@ -10,14 +10,13 @@ export default function Footer() {
           <div className="company-location-section">
             <div className="logo_section flex">
               <img
-                className="object-fill h-10 w-10"
-                src="/assets/favicon.ico"
+                className="object-fill h-12 w-12"
+                src="/assets/company-logo.png"
                 alt="company logo"
               />
-
               <Link to={"/"}>
                 <div className="company-name">
-                  <h1 className="font-semibold  pl-2">JobGenie</h1>
+                  <h1 className="font-semibold  pl-2">Job Genie</h1>
                   <p className="text-xs pl-2 text-gray-400">
                     The Ultimate for Job Seekers
                   </p>
@@ -32,7 +31,7 @@ export default function Footer() {
           <div className="newsletter-section w-2/5 pl-16">
             <h1 className="text-3xl font-medium">Newsletter</h1>
             <p className="text-gray-500 text-sm">
-              Subscribe to our newletter to get the latest JobGenie news
+              Subscribe to our newletter to get the latest Job Genie news
             </p>
             <div className="flex mt-3">
               <div className="flex bg-white border border-gray-300 rounded-3xl px-4 w-[300px] mr-3">
@@ -53,7 +52,7 @@ export default function Footer() {
         </div>
         <div className="footer-middle container mx-auto py-10 border-b">
           <p className="text-gray-500">
-            © 2023 JobGenie Business Corporation. "JobGenie" and the JobGenie
+            © 2023 Job Genie Business Corporation. "Job Genie" and the Job Genie
             logo are registered trademarks of the company. *International
             payments may be subject to a currency conversion fee. Flex extended
             payment terms and other optional international payments may incur
@@ -100,7 +99,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="copyrights hover:underline">
-            JobGenie 2024. all Rights Reserved
+            Job Genie 2024. all Rights Reserved
           </div>
         </div>
       </div>

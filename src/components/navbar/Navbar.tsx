@@ -88,13 +88,13 @@ export default function Navbar({ paRrf }: HeaderProps) {
         <div className="navbar flex items-center h-[12vh] justify-between px-3 container mx-auto">
           <div className="logo_section flex col-span-3">
             <img
-              className="object-fill h-10 w-10"
-              src="/assets/favicon.ico"
+              className="object-fill h-12 w-12"
+              src="/assets/company-logo.png"
               alt="company logo"
             />
             <Link to={"/"}>
               <div className="company-name">
-                <h1 className="font-semibold pl-2">JobGenie</h1>
+                <h1 className="font-semibold pl-2">Job Genie</h1>
                 <p className="text-xs pl-2 text-gray-400">
                   The Ultimate for Job Seekers
                 </p>

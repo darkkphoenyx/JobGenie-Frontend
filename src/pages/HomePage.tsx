@@ -12,7 +12,7 @@ export default function HomePage() {
             <Link className="flex mb-4" to={"/"}>
               <img src="/assets/flag.svg" alt="flags-up" />
               <span className="text-[--color-text] font-medium px-3">
-                More about JobGenie
+                More about Job Genie
               </span>
             </Link>
             <p className="font-medium text-3xl">

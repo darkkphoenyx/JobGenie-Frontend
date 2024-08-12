@@ -67,7 +67,7 @@ export const JobCard = () => {
         <div className="flex justify-center mb-5">
           <img src="/assets/combine.svg" alt="combine tile logo" />
           <h1 className="text-[--color-text] font-medium pl-5">
-            JobGenie's Features
+            Job Genie's Features
           </h1>
         </div>
         <div className="w-4/5 mx-auto justify-center flex">
