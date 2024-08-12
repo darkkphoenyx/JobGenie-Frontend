@@ -28,7 +28,7 @@ export default function HeroSection() {
         </div>
         <div className="mid-section h-[88vh] pt-16">
           <span className=" flex justify-center items-center">
-            <span className="flex text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl px-5 py-2 mb-5">
+            <span className="font-medium flex text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl px-5 py-2 mb-5">
               <img
                 className="pr-3"
                 src="/assets/thumbs-up.svg"

@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
         <div className="footer-middle container mx-auto py-10 border-b">
           <p className="text-gray-500">
-            © 2023 Jobstera Business Corporation. "Jobstera" and the Jobstera
+            © 2023 JobGenie Business Corporation. "JobGenie" and the JobGenie
             logo are registered trademarks of the company. *International
             payments may be subject to a currency conversion fee. Flex extended
             payment terms and other optional international payments may incur
