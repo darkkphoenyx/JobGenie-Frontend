@@ -3,7 +3,7 @@ export default function HeroSection() {
   return (
     <>
       <div className="main text-center mx-auto flex justify-center w-full  bg-[url(/assets/background.png)] bg-no-repeat bg-center bg-cover">
-        <div className="left-section section pl-10 mt-16 w-[300px]">
+        <div className="left-section section pl-10 mt-20 w-[300px]">
           <div className=" mb-2">
             <img
               className="h-[50%] w-[50%] rounded-2xl"
@@ -26,7 +26,7 @@ export default function HeroSection() {
             />
           </div>
         </div>
-        <div className="mid-section h-[88vh] pt-16">
+        <div className="mid-section h-[88vh] mt-20">
           <span className=" flex justify-center items-center">
             <span className="font-medium flex text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl px-5 py-2 mb-5">
               <img
@@ -73,7 +73,7 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="right-section section pr-10 mt-16 w-[300px]">
+        <div className="right-section section pr-10 mt-20 w-[300px]">
           <div className=" mb-2">
             <img
               className="h-[50%] w-[50%] rounded-2xl"
