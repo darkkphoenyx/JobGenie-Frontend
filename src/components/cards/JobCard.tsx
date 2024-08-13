@@ -113,11 +113,11 @@ export const JobCard = () => {
                     {item.description}
                   </p>
                 </div>
-                <div className="location flex justify-start mt-5 text-[--color-text-tertiary]">
-                  <img src="/assets/map-pin2.svg" alt="map pin image" />
-                  <p className="pl-1 pr-5">{item.location}</p>
-                  <img src="/assets/briefcase.svg" alt="briefcase image" />
-                  <p className="pl-2">{item.type}</p>
+                <div className="location flex items-center justify-start mt-5 text-[--color-text-tertiary]">
+                  <img className="h-4" src="/assets/map-pin2.svg" alt="map pin image" />
+                  <p className="pl-1 pr-5 text-sm">{item.location}</p>
+                  <img className="h-4" src="/assets/briefcase.svg" alt="briefcase image" />
+                  <p className="pl-2 text-sm">{item.type}</p>
                 </div>
                 <button className="bg-black hover:bg-white border border-black hover:text-black font-medium text-white text-center w-full rounded-3xl py-4 mt-5">
                   Apply Now
