@@ -8,6 +8,7 @@ const cards = [
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "London, UK",
     type: "Full Time",
+    link: "https://www.youtube.com",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const cards = [
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Liverpool, UK",
     type: "Part Time",
+    link: "",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const cards = [
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Manchester, UK",
     type: "Full Time",
+    link: "",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const cards = [
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Glasglow, UK",
     type: "Part Time",
+    link: "",
   },
   {
     id: 4,
@@ -48,6 +52,7 @@ const cards = [
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Las Vegas, USA",
     type: "Full Time",
+    link: "",
   },
   {
     id: 4,
@@ -58,6 +63,7 @@ const cards = [
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Texas, USA",
     type: "Work From Home",
+    link: "",
   },
 ];
 export const JobCard = () => {
@@ -114,14 +120,24 @@ export const JobCard = () => {
                   </p>
                 </div>
                 <div className="location flex items-center justify-start mt-5 text-[--color-text-tertiary]">
-                  <img className="h-4" src="/assets/map-pin2.svg" alt="map pin image" />
+                  <img
+                    className="h-4"
+                    src="/assets/map-pin2.svg"
+                    alt="map pin image"
+                  />
                   <p className="pl-1 pr-5 text-sm">{item.location}</p>
-                  <img className="h-4" src="/assets/briefcase.svg" alt="briefcase image" />
+                  <img
+                    className="h-4"
+                    src="/assets/briefcase.svg"
+                    alt="briefcase image"
+                  />
                   <p className="pl-2 text-sm">{item.type}</p>
                 </div>
-                <button className="bg-black hover:bg-white border border-black hover:text-black font-medium text-white text-center w-full rounded-3xl py-4 mt-5">
-                  Apply Now
-                </button>
+                <a href={item.link}>
+                  <button className="bg-black hover:bg-white border border-black hover:text-black font-medium text-white text-center w-full rounded-3xl py-4 mt-5">
+                    Apply Now
+                  </button>
+                </a>
               </div>
             </li>
           ))}
