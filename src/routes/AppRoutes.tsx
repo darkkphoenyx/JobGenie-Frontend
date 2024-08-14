@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
@@ -10,17 +10,26 @@ import Login from "../pages/Login";
 
 export default function AppRoutes() {
   const parentRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
+
+  // List of paths where you want to hide Navbar and Footer
+  const noNavbarFooterRoutes = ["/login", "/some-other-page", "/another-page"];
+
+  // Check if the current path is in the list
+  const hideNavbarFooter = noNavbarFooterRoutes.includes(location.pathname);
+
   return (
     <>
-      <Navbar paRrf={parentRef} />
+      {!hideNavbarFooter && <Navbar paRrf={parentRef} />}
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/recruiter" element={<Recruiter />}></Route>
-        <Route path="/careertips" element={<CareerTips />}></Route>
-        <Route path="/blogs" element={<Blogs />}></Route>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/recruiter" element={<Recruiter />} />
+        <Route path="/careertips" element={<CareerTips />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/login" element={<Login />} />
+        {/* Add more routes as needed */}
       </Routes>
-      <Footer />
+      {!hideNavbarFooter && <Footer />}
     </>
   );
 }
