@@ -127,9 +127,11 @@ export default function Login() {
             </div>
           </div>
           <div className="mt-6 flex items-center justify-center border border-[--color-text] hover:bg-[--color-text] text-[--color-text] hover:text-white w-full py-1 rounded-3xl">
-            <button className=" font-semibold hover:font-semibold text-3xl px-10 rounded-xl ">
-              Login
-            </button>
+            <a href="#">
+              <button className=" font-semibold hover:font-semibold text-3xl px-10 rounded-xl ">
+                Login
+              </button>
+            </a>
           </div>
           <div className="flex items-center justify-center mt-6 font-normal">
             <span>Don't have an account yet?</span>

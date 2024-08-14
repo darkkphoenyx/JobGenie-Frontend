@@ -17,7 +17,7 @@ export default function LoginComponent({
             <input
               type="text"
               placeholder={placeholder}
-              className=" w-full placeholder:text-gray-500 placeholder:font-normal text-black font-normal px-2 p-1 outline-none bg-transparent "
+              className=" w-full placeholder:text-gray-500 placeholder:font-normal text-black font-normal px-2 py-1 outline-none bg-transparent "
             />
           </div>
           <div className="col-span-1 overflow-hidden">
@@ -30,7 +30,7 @@ export default function LoginComponent({
             <input
               type={show.showPassword ? "text" : "password"}
               placeholder={placeholder}
-              className="w-full font-normal h-fit mt-1 placeholder:font-normal placeholder:text-gray-500 text-black px-2 mr-4 outline-none bg-transparent "
+              className="w-full mt-1 placeholder:font-normal placeholder:text-gray-500 text-black px-2 outline-none bg-transparent "
             />
           </div>
           <div
