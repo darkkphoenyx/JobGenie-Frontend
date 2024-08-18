@@ -1,73 +1,17 @@
-// export default function Login() {
-//   return (
-//     <>
-//       <div className="form h-[100vh] flex items-center justify-center bg-[url(/assets/loginBackground.png)] bg-no-repeat bg-center bg-cover">
-//         <form
-//           className="h-fit w-96 text-center rounded-2xl shadow-2xl px-5 pb-10 bg-white/80"
-//           action="#"
-//         >
-//           <div className="w-full">
-//             <h1 className="font-semibold text-3xl py-5 text-[--color-text]">
-//               Login
-//             </h1>
-//             <div className="outline-none w-full py-1 border-b border-gray-500 px-2 mt-2">
-//               <input
-//                 className="w-full outline-none py-1 bg-transparent"
-//                 type="text"
-//                 placeholder="Username"
-//               />
-//             </div>
-//             <div className="outline-none w-full py-1 border-b border-gray-500 px-2 mt-4">
-//               <input
-//                 className="w-full outline-none py-1 bg-transparent"
-//                 type="password"
-//                 placeholder="Password"
-//               />
-//             </div>
-//           </div>
-//           <div className="flex justify-between mt-5">
-//             <div className="gap-1 flex">
-//               <input type="checkbox" />
-//               Remember Me
-//             </div>
-//             <div className="underline text-[--color-text]">
-//               <a href="#">Forgot Password?</a>
-//             </div>
-//           </div>
-//           <div className="font-semibold text-3xl py-5 text-[--color-text] mt-4">
-//             <a href="#">
-//               <button className="border border-[--color-text] hover:bg-[--color-text] hover:text-white w-full py-2 rounded-3xl">
-//                 Login
-//               </button>
-//             </a>
-//           </div>
-//           <div>
-//             <p>
-//               Already have an account?{" "}
-//               <a href="#">
-//                 <span className="text-[--color-text] underline">Register</span>
-//               </a>
-//             </p>
-//           </div>
-//         </form>
-//       </div>
-//     </>
-//   );
-// }
 import LoginComponent from "../components/input/LoginComponent";
 import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
     <div className="h-[100vh] w-full grid grid-flow-col grid-cols-12 bg-[url(/assets/loginBackground.png)] bg-no-repeat bg-center bg-contain]">
-      <div className="image w-full col-span-6 px-10">
-        <div className="proverbs-section flex justify-center items-center pt-32">
+      <div className="proverb-section w-full col-span-6 px-10 flex justify-center items-center flex-col">
+        <div className="proverbs-section">
           <div className=" text-white">
             <h1 className="text-6xl font-semibold">
               <span className="text-8xl text-yellow-400">"</span>Your{" "}
               <span className="text-8xl ">Dream</span>
             </h1>
-            <div className="flex justify-end">
+            <div className="flex justify-center">
               <h1 className="text-6xl font-semibold">
                 Our <span className="text-9xl text-yellow-400">Goal</span>
               </h1>
@@ -137,7 +81,7 @@ export default function Login() {
             <span>Don't have an account yet?</span>
             <Link
               className="ml-2 underline text-[--color-text] font-semibold"
-              to="/register"
+              to="/registrationPage"
             >
               Register
             </Link>
