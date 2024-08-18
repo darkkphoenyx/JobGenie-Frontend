@@ -53,7 +53,7 @@ export default function Testimonials() {
             {review.map((item) => (
               <li className="my-10" key={item.id}>
                 <div className="review-1 w-[580px] border rounded-2xl border-gray-100 p-5 shadow-2xl">
-                  <div className="rating flex justify-between text-gray-500 mt-2">
+                  <div className="rating flex justify-between items-center text-gray-500 mt-2">
                     <p className="px-5 text-sm py-1 border border-gray-300 rounded-3xl">
                       User Testimonial
                     </p>
