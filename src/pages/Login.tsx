@@ -81,7 +81,7 @@ export default function Login() {
             <span>Don't have an account yet?</span>
             <Link
               className="ml-2 underline text-[--color-text] font-semibold"
-              to="/registrationPage"
+              to="/register"
             >
               Register
             </Link>
