@@ -14,7 +14,7 @@ export default function AppRoutes() {
   const location = useLocation();
 
   // List of paths where you want to hide Navbar and Footer
-  const noNavbarFooterRoutes = ["/login", "/registrationPage"];
+  const noNavbarFooterRoutes = ["/login", "/register"];
 
   // Check if the current path is in the list
   const hideNavbarFooter = noNavbarFooterRoutes.includes(location.pathname);
@@ -28,7 +28,7 @@ export default function AppRoutes() {
         <Route path="/careertips" element={<CareerTips />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/registrationPage" element={<RegistrationPage />} />
+        <Route path="/register" element={<RegistrationPage />} />
       </Routes>
       {!hideNavbarFooter && <Footer />}
     </>

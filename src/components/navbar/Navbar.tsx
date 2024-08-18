@@ -61,7 +61,7 @@ export default function Navbar({ paRrf }: HeaderProps) {
                 Login
               </button>
             </Link>
-            <Link to={"/registrationPage"}>
+            <Link to={"/register"}>
               <button className="hover:text-white hover:bg-[--color-text] px-5 border py-2 rounded-3xl text-[--color-text] font-semibold border-[--color-text]">
                 Register Now
               </button>

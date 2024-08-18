@@ -38,11 +38,11 @@ export default function Testimonials() {
               Reviews of people who got jobs using Job Genie
             </h1>
             <p className="text-gray-500 mr-3">
-              Unlock Your True Potential And Discover A World Of Opportunities
-              That Align With Your Skills, Interests, And Aspirations
+              Unlock your true potential and discover a world of opportunities
+              that align with your skills, interests, and aspirations
             </p>
             <Link to={"#"}>
-              <button className="mt-5 hover:text-[--color-text] hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
+              <button className="mt-5 hover:text-[--color-text] hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-7 py-3 rounded-3xl">
                 More Stories
               </button>
             </Link>

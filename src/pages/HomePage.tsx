@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import HeroSection from "../components/hero section/HeroSection";
 import { JobCard } from "../components/cards/JobCard";
 import Testimonials from "../components/testimonials/Testimonials";
+import GettingStarted from "../components/cards/GettingStarted";
 
 export default function HomePage() {
   return (
@@ -10,12 +10,12 @@ export default function HomePage() {
         <HeroSection />
         <div className="aboutus grid-cols-2 flex justify-center items-center gap-40 py-20 bg-white">
           <div className="w-[550px]">
-            <Link className="flex mb-4" to={"/"}>
+            <div className="flex mb-4">
               <img src="/assets/flag.svg" alt="flags-up" />
               <span className="text-[--color-text] font-medium px-3">
                 More about Job Genie
               </span>
-            </Link>
+            </div>
             <p className="font-medium text-3xl">
               Unlock Your True Potential And Discover A World Of Opportunities
               That Align With Your Skills, Interests, And Aspirations
@@ -69,8 +69,11 @@ export default function HomePage() {
         <div id="jobs">
           <JobCard />
         </div>
-        <div id="testimonial">
+        <div id="testimonial" className="bg-white">
           <Testimonials />
+        </div>
+        <div className=" bg-white" id="gettingStarted">
+          <GettingStarted />
         </div>
       </div>
     </>
