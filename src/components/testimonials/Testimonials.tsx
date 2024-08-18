@@ -3,7 +3,7 @@ const review = [
   {
     id: 1,
     name: "Deepesh Sunuwar",
-    post: "Fullstack developer",
+    post: "Fullstack developer, Layers",
     image: "/assets/deepesh.png",
     url: "https://www.linkedin.com/in/deepeshsunuwar/",
     message:
@@ -14,7 +14,7 @@ const review = [
     id: 2,
     name: "Subham Joshi",
     image: "/assets/subham.png",
-    post: "Software Engineer",
+    post: "Software Engineer, UBA/Monotype",
     url: "https://www.linkedin.com/in/subham-joshi18/",
     message:
       "If you're a job seeker looking for a platform that truly cares about your success, look no further. This platform is a game-changer, and I highly recommend it to anyone serious about their career.",
