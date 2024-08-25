@@ -134,7 +134,7 @@ export const JobCard = () => {
                   <p className="pl-2 text-sm">{item.type}</p>
                 </div>
                 <a href={item.link}>
-                  <button className="bg-black hover:bg-white border border-black hover:text-black font-medium text-white text-center w-full rounded-3xl py-4 mt-5">
+                  <button className="bg-black transition-all hover:bg-white border border-black hover:text-black font-medium text-white text-center w-full rounded-3xl py-4 mt-5">
                     Apply Now
                   </button>
                 </a>

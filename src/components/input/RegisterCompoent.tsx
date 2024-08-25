@@ -65,7 +65,7 @@ export default function RegisterCompoent() {
             </div>
           </div>
           <p className="text-sm">*Information is required</p>
-          <div className="mt-5 flex items-center justify-center border border-[--color-text] hover:bg-[--color-text] text-[--color-text] hover:text-white w-full py-1 rounded-3xl">
+          <div className="transition-all mt-5 flex items-center justify-center border border-[--color-text] hover:bg-[--color-text] text-[--color-text] hover:text-white w-full py-1 rounded-3xl">
             <button className=" font-semibold hover:font-semibold text-2xl">
               Register
             </button>

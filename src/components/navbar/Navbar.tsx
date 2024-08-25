@@ -57,12 +57,12 @@ export default function Navbar({ paRrf }: HeaderProps) {
           </div>
           <div className="nav-login col-span-3">
             <Link to={"/login"}>
-              <button className="px-4 mr-2 font-semibold rounded-3xl py-2 hover:bg-gray-400/70">
+              <button className="px-4 mr-2 font-semibold transition-all rounded-3xl py-2 hover:bg-gray-400/70">
                 Login
               </button>
             </Link>
             <Link to={"/register"}>
-              <button className="hover:text-white hover:bg-[--color-text] px-5 border py-2 rounded-3xl text-[--color-text] font-semibold border-[--color-text]">
+              <button className="hover:text-white transition-all hover:bg-[--color-text] px-5 border py-2 rounded-3xl text-[--color-text] font-semibold border-[--color-text]">
                 Register Now
               </button>
             </Link>

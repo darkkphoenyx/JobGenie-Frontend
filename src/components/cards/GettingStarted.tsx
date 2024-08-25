@@ -14,7 +14,7 @@ export default function GettingStarted() {
             that align with your skills, interests, and aspirations
           </p>
           <Link to={"/register"}>
-            <button className="bg-black hover:bg-white border border-black hover:text-black font-medium text-white text-center w-[200px] rounded-3xl py-4 mt-5">
+            <button className="bg-black transition-all hover:bg-transparent border border-black hover:text-black font-medium text-white text-center w-[200px] rounded-3xl py-4 mt-5">
               Get started now{" "}
             </button>
           </Link>

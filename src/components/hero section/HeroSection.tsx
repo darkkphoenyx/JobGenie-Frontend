@@ -68,7 +68,7 @@ export default function HeroSection() {
                 placeholder="Kathmandu,Nepal"
               />
             </div>
-            <button className="hover:text-[--color-text] hover:bg-white text-white border hover:border-[--color-text] bg-[--color-text] px-3 py-2 rounded-3xl">
+            <button className="hover:text-[--color-text] transition-all hover:bg-white text-white border hover:border-[--color-text] bg-[--color-text] px-3 py-2 rounded-3xl">
               Search
             </button>
           </div>

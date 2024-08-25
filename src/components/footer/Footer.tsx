@@ -52,7 +52,7 @@ export default function Footer() {
                   />
                 </div>
                 <a href="#">
-                  <button className="hover:text-[--color-text] hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
+                  <button className="hover:text-[--color-text] transition-all hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
                     Subscribe
                   </button>
                 </a>
@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="footer-middle container mx-auto py-10 border-b">
+        <div className="footer-middle container mx-auto py-10 border-b transition-all">
           <p className="text-gray-500">
             © 2023 Job Genie Business Corporation. "Job Genie" and the Job Genie
             logo are registered trademarks of the company. *International
