@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 export default function Navbar() {
+  const location = useLocation();
+
   return (
-    <div className="shadow-md sticky top-0 bg-white/90">
+    <div className="shadow-md sticky top-0 bg-white/90 z-50">
       <div className="navbar flex items-center h-[12vh] justify-between px-3 container mx-auto">
         <div className="logo_section flex items-center space-x-2">
           <img
@@ -18,19 +21,52 @@ export default function Navbar() {
             </div>
           </Link>
         </div>
-        <div className="nav-main">
-          <ul className="flex gap-12 items-center">
-            <li>
-              <Link to={"/"}>Find Jobs</Link>
+        <div className="nav-main h-max font-medium">
+          <ul className="flex gap-12 items-center  my-9">
+            <li className="h-6">
+              <Link to={"/"}>
+                {" "}
+                {location.pathname == "/" ? (
+                  <p className="border-b-2 border-[--color-text] text-[--color-text]">
+                    Find Job
+                  </p>
+                ) : (
+                  "Find Job"
+                )}
+              </Link>
             </li>
-            <li>
-              <Link to={"/recruiter"}>For Recruiters</Link>
+            <li className="h-6">
+              <Link to={"/recruiter"}>
+                {location.pathname == "/recruiter" ? (
+                  <p className="border-b-2 border-[--color-text] text-[--color-text]">
+                    For Recruiters
+                  </p>
+                ) : (
+                  "For Recruiters"
+                )}
+              </Link>
             </li>
-            <li>
-              <Link to={"/blogs"}>Blogs</Link>
+            <li className="h-6">
+              <Link to={"/blogs"}>
+                {location.pathname == "/blogs" ? (
+                  <p className="border-b-2 border-[--color-text] text-[--color-text]">
+                    Blogs
+                  </p>
+                ) : (
+                  "Blogs"
+                )}
+              </Link>
             </li>
-            <li>
-              <Link to={"/careertips"}>Career tips</Link>
+            <li className="h-6">
+              <Link to={"/careertips"}>
+                {location.pathname == "/careertips" ? (
+                  <p className="border-b-2 border-[--color-text] text-[--color-text]">
+                    Career tips
+                  </p>
+                ) : (
+                  "Career tips"
+                )}
+              </Link>
             </li>
           </ul>
         </div>
