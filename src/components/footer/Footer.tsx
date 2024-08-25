@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="company-section flex">
                 <img
                   className="object-fill h-12 w-12"
-                  src="/assets/company-logo.png"
+                  src="/assets/company-logo.webp"
                   alt="company logo"
                 />
                 <Link to={"/"}>

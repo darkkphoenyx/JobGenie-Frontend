@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
-    <div className="h-[100vh] w-full grid grid-flow-col grid-cols-12 bg-[url(/assets/loginBackground.png)] bg-no-repeat bg-center bg-contain]">
+    <div className="h-[100vh] w-full grid grid-flow-col grid-cols-12 bg-[url(/assets/loginBackground.webp)] bg-no-repeat bg-center bg-contain]">
       <div className="proverb-section w-full col-span-6 px-10 flex justify-center items-center flex-col">
         <div className="proverbs-section">
           <div className=" text-white">
@@ -23,7 +23,7 @@ export default function Login() {
             <Link to={"/"}>
               <img
                 className="object-fill h-20 w-20"
-                src="/assets/company-logo.png"
+                src="/assets/company-logo.webp"
                 alt="company logo"
               />
             </Link>

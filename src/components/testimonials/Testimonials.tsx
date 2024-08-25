@@ -4,7 +4,7 @@ const review = [
     id: 1,
     name: "Deepesh Sunuwar",
     post: "Fullstack developer, Layers",
-    image: "/assets/deepesh.png",
+    image: "/assets/deepesh.webp",
     url: "https://www.linkedin.com/in/deepeshsunuwar/",
     message:
       "Thanks to this platform, I secured a job in my dream company! I couldn't be happier with the support and opportunities this platform offered. Highly recommended to anyone serious about finding their perfect job!",
@@ -13,7 +13,7 @@ const review = [
   {
     id: 2,
     name: "Subham Joshi",
-    image: "/assets/subham.png",
+    image: "/assets/subham.webp",
     post: "Software Engineer, UBA/Monotype",
     url: "https://www.linkedin.com/in/subham-joshi18/",
     message:
@@ -62,7 +62,7 @@ export default function Testimonials() {
                         <img
                           key={index}
                           className="h-7"
-                          src="/assets/star.png"
+                          src="/assets/star.webp"
                           alt="rating"
                         />
                       ))}

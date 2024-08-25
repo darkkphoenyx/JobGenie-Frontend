@@ -24,22 +24,22 @@ export default function HomePage() {
             <div className="company-logos flex justify-between items-center mt-10">
               <img
                 className="h-7"
-                src="/assets/spotify.png"
+                src="/assets/spotify.webp"
                 alt="spotify logo"
               />
               <img
                 className="h-11"
-                src="/assets/microsoft.jpg"
+                src="/assets/microsoft.webp"
                 alt="spotify logo"
               />
               <img
                 className="h-5"
-                src="/assets/macfee.png"
+                src="/assets/macfee.webp"
                 alt="spotify logo"
               />
               <img
                 className="h-7"
-                src="/assets/google.png"
+                src="/assets/google.webp"
                 alt="spotify logo"
               />
             </div>

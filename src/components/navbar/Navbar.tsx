@@ -9,7 +9,7 @@ export default function Navbar() {
         <div className="logo_section flex items-center space-x-2">
           <img
             className="object-fill h-12 w-12"
-            src="/assets/company-logo.png"
+            src="/assets/company-logo.webp"
             alt="company logo"
           />
           <Link to={"/"}>

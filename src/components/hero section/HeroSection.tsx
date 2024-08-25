@@ -2,26 +2,26 @@ export default function HeroSection() {
   const header = "font-medium text-5xl my-5";
   return (
     <>
-      <div className="main text-center mx-auto flex justify-center w-full  bg-[url(/assets/background.png)] bg-no-repeat bg-center bg-cover">
+      <div className="main text-center mx-auto flex justify-center w-full  bg-[url(/assets/background.webp)] bg-no-repeat bg-center bg-cover">
         <div className="left-section section pl-10 mt-20 w-[300px]">
           <div className=" mb-2">
             <img
               className="h-[50%] w-[50%] rounded-2xl"
-              src="/assets/person1.png"
+              src="/assets/person1.webp"
               alt="professional image"
             />
           </div>
           <div className="flex items-end justify-end my-2 ">
             <img
               className="h-[50%] w-[50%]  rounded-2xl"
-              src="/assets/person2.png"
+              src="/assets/person2.webp"
               alt="professional image"
             />
           </div>
           <div className="float-start mt-2">
             <img
               className="h-[50%] w-[50%] rounded-2xl"
-              src="/assets/person3.png"
+              src="/assets/person3.webp"
               alt="professional image"
             />
           </div>
@@ -77,21 +77,21 @@ export default function HeroSection() {
           <div className=" mb-2">
             <img
               className="h-[50%] w-[50%] rounded-2xl"
-              src="/assets/person4.png"
+              src="/assets/person4.webp"
               alt="professional image"
             />
           </div>
           <div className="flex items-end justify-end my-2 ">
             <img
               className="h-[50%] w-[50%]  rounded-2xl"
-              src="/assets/person5.png"
+              src="/assets/person5.webp"
               alt="professional image"
             />
           </div>
           <div className="float-start mt-2">
             <img
               className="h-[50%] w-[50%] rounded-2xl"
-              src="/assets/person6.png"
+              src="/assets/person6.webp"
               alt="professional image"
             />
           </div>

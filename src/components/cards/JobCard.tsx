@@ -3,7 +3,7 @@ const cards = [
     id: 1,
     title: "UI/UX Designer",
     companyName: "Pinterest",
-    image: "/assets/pinterest.png",
+    image: "/assets/pinterest.webp",
     description:
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "London, UK",
@@ -14,7 +14,7 @@ const cards = [
     id: 2,
     title: "UI Designer",
     companyName: "Spotify",
-    image: "/assets/spotify-logo.png",
+    image: "/assets/spotify-logo.webp",
     description:
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Liverpool, UK",
@@ -25,7 +25,7 @@ const cards = [
     id: 3,
     title: "Senior UI Designer",
     companyName: "Malichimp",
-    image: "/assets/malichimp-logo.png",
+    image: "/assets/malichimp-logo.webp",
     description:
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Manchester, UK",
@@ -36,7 +36,7 @@ const cards = [
     id: 4,
     title: "Product Designer",
     companyName: "Databrick",
-    image: "/assets/databricks-logo.png",
+    image: "/assets/databricks-logo.webp",
     description:
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Glasglow, UK",
@@ -58,7 +58,7 @@ const cards = [
     id: 4,
     title: "DBA",
     companyName: "Github",
-    image: "/assets/github-logo.png",
+    image: "/assets/github-logo.webp",
     description:
       "You will play a cruical role in creating engaging and visually appealing user interfaces for our job.",
     location: "Texas, USA",
@@ -101,7 +101,7 @@ export const JobCard = () => {
                       </h1>
                       <img
                         className="h-4"
-                        src="/assets/tick.png"
+                        src="/assets/tick.webp"
                         alt="briefcase image"
                       />
                     </div>
