@@ -2,6 +2,7 @@ import HeroSection from "../components/hero section/HeroSection";
 import { JobCard } from "../components/cards/JobCard";
 import Testimonials from "../components/testimonials/Testimonials";
 import GettingStarted from "../components/cards/GettingStarted";
+import Slider from "../components/cards/Slider";
 
 export default function HomePage() {
   return (
@@ -65,6 +66,9 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="Marquee overflow-hidden">
+          <Slider />
         </div>
         <div id="jobs">
           <JobCard />
