@@ -21,7 +21,7 @@
 
 ## Features of the JobGenie:
 
-- 100% Job Graunted
+- 100% Job Guaranteed
 - Better Environment
 - Good Learning Environment
 - 24/7 Tech Support
