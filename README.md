@@ -1,6 +1,6 @@
 # Job Genie
 
-[JobGenie ](https://jobgenie-website.vercel.app/) is a modern job search platform designed to connect job seekers with top companies across various industries. The homepage features a clean, user-friendly interface, showcasing a curated list of job openings from reputable companies.
+[Job Genie ](https://jobgenie-website.vercel.app/) is a modern job search platform designed to connect job seekers with top companies across various industries. The homepage features a clean, user-friendly interface, showcasing a curated list of job openings from reputable companies.
 
 ## JobGenie previews
 
