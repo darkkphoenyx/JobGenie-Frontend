@@ -12,6 +12,12 @@
 <p align="center">
 <img src="./gitassets/page3.png" alt="page3 png"/>
 </p>
+<p align="center">
+<img src="./gitassets/page5.png" alt="page5 png"/>
+</p>
+<p align="center">
+<img src="./gitassets/page6.png" alt="page6 png"/>
+</p>
 
 ## Features of the JobGenie:
 
@@ -28,5 +34,5 @@
 
 Porfolio: [@darkkphoenyx](https://darkkphoenyx-portfolio.vercel.app/)  
 LinkedIn: [@deepeshsunuwar](https://www.linkedin.com/in/deepesh-sunuwar-6237351aa/)  
-Facebook: [@deepeshsunuwar](https://www.facebook.com/deepesh.singhsunuwar)  
+Facebook: [@deepeshsunuwar](https://www.facebook.com/deepesh.sunuwar.08)  
 E-mail: deepgeneral33@gmail.com
