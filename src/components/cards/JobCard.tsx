@@ -91,11 +91,11 @@ export const JobCard = () => {
         <ul role="list" className="grid-cols-3 grid gap-y-10">
           {cards.map((item) => (
             <li key={item.id}>
-              <div className="w-4/5 mx-auto p-5 rounded-2xl h-full  bg-white">
-                <div className="flex justify-between items-center">
+              <div className="w-4/5 mx-auto p-5 rounded-2xl h-full bg-white">
+                <div className="flex justify-between items-center flex-wrap">
                   <div className="font-semibold">
                     <h1>{item.title}</h1>
-                    <div className="flex items-center">
+                    <div className="flex items-center flex-wrap">
                       <h1 className="font-medium text-gray-500/70 pr-3">
                         {item.companyName}
                       </h1>
@@ -119,7 +119,7 @@ export const JobCard = () => {
                     {item.description}
                   </p>
                 </div>
-                <div className="location flex items-center justify-start mt-5 text-[--color-text-tertiary]">
+                <div className="location flex flex-wrap items-center justify-start mt-5 text-[--color-text-tertiary]">
                   <img
                     className="h-4"
                     src="/assets/map-pin2.svg"

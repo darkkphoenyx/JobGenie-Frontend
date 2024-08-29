@@ -26,7 +26,7 @@ export default function Testimonials() {
   return (
     <>
       <div className="testimonial flex items-center justify-between gap-5 container mx-auto py-12 bg-white">
-        <div className="left-section ml-10 ">
+        <div className="left-section ml-10 w-[30%]">
           <div className="flex mb-5">
             <img src="/assets/chat.svg" alt="flags-up" />
             <span className="text-[--color-text] font-medium px-3">
@@ -48,12 +48,12 @@ export default function Testimonials() {
             </Link>
           </div>
         </div>
-        <div className="user-reviews-section w-full flex justify-end pr-10">
+        <div className="user-reviews-section w-[60%] flex items-center justify-end flex-wrap pr-10">
           <ul>
             {review.map((item) => (
               <li className="my-10" key={item.id}>
-                <div className="review-1 w-[580px] border rounded-2xl border-gray-100 p-5 shadow-2xl">
-                  <div className="rating flex justify-between items-center text-gray-500 mt-2">
+                <div className="review-1 border rounded-2xl border-gray-100 p-5 shadow-2xl">
+                  <div className="rating flex justify-between items-center text-gray-500 mt-2 flex-wrap">
                     <p className="px-5 text-sm py-1 border border-gray-300 rounded-3xl">
                       User Testimonial
                     </p>

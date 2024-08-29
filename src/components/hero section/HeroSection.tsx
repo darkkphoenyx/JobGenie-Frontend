@@ -3,31 +3,31 @@ export default function HeroSection() {
   return (
     <>
       <div className="main text-center mx-auto flex justify-center w-full  bg-[url(/assets/background.webp)] bg-no-repeat bg-center bg-cover">
-        <div className="left-section section pl-10 mt-20 w-[300px]">
-          <div className=" mb-2">
+        <div className="left-section section pl-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]">
+          <div className="flex self-start">
             <img
-              className="h-[50%] w-[50%] rounded-2xl"
+              className="max-h-[110px] max-w-[110px] rounded-2xl bg-yellow-400 "
               src="/assets/person1.webp"
               alt="professional image"
             />
           </div>
-          <div className="flex items-end justify-end my-2 ">
+          <div className="flex self-end rounded-2xl">
             <img
-              className="h-[50%] w-[50%]  rounded-2xl"
+              className="max-h-[110px] max-w-[110px] rounded-2xl"
               src="/assets/person2.webp"
               alt="professional image"
             />
           </div>
-          <div className="float-start mt-2">
+          <div className="flex self-start rounded-2xl">
             <img
-              className="h-[50%] w-[50%] rounded-2xl"
+              className="max-h-[110px] max-w-[110px] rounded-2xl"
               src="/assets/person3.webp"
               alt="professional image"
             />
           </div>
         </div>
-        <div className="mid-section h-[88vh] mt-20">
-          <span className=" flex justify-center items-center">
+        <div className="mid-section h-[88vh] pt-20">
+          <span className=" flex justify-center items-center flex-wrap shrink">
             <span className="font-medium flex text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl px-5 py-2 mb-5">
               <img
                 className="pr-3"
@@ -37,16 +37,21 @@ export default function HeroSection() {
               #1 Top greatest on Job Hunt
             </span>
           </span>
-          <h1 className={header}>Supporting Job Seekeers</h1>
-          <h1 className={header}>Every Steps of the Way</h1>
-          <p className="w-4/5 mt-7 mx-auto text-gray-500 ">
-            Unlock your true potential and discover a world of opportunities
-            that align with your skills, interests, and aspirations
-          </p>
-          <div className="search-box bg-white rounded-2xl w-[550px] shadow-2xl px-3 mx-auto flex justify-center mt-10 border py-2">
+          <div className="flex flex-col ">
+            <h1 className={header}>
+              Supporting Job Seekeers
+              <br />
+              Every Steps of the Way
+            </h1>
+            <p className="w-4/5 mx-auto text-gray-500">
+              Unlock your true potential and discover a world of opportunities
+              that align with your skills, interests, and aspirations
+            </p>
+          </div>
+          <div className="search-box bg-white rounded-2xl w-[70%] shadow-2xl px-3 mx-auto flex justify-between flex-wrap mt-10 border py-2">
             <div className="find-job flex justify-center items-center pl-2">
               <img
-                className="h-6 w-6"
+                className="h-4 w-4"
                 src="/assets/search.svg"
                 alt="search finder"
               />
@@ -58,7 +63,7 @@ export default function HeroSection() {
             </div>
             <div className="find-job flex justify-center items-center">
               <img
-                className="h-6 w-6"
+                className="h-4 w-4"
                 src="/assets/map-pin.svg"
                 alt="search finder"
               />
@@ -73,24 +78,24 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="right-section section pr-10 mt-20 w-[300px]">
-          <div className=" mb-2">
+        <div className="left-section section pr-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]">
+          <div className="flex self-start">
             <img
-              className="h-[50%] w-[50%] rounded-2xl"
+              className="max-h-[110px] max-w-[110px] rounded-2xl bg-yellow-400 "
               src="/assets/person4.webp"
               alt="professional image"
             />
           </div>
-          <div className="flex items-end justify-end my-2 ">
+          <div className="flex self-end rounded-2xl">
             <img
-              className="h-[50%] w-[50%]  rounded-2xl"
+              className="max-h-[110px] max-w-[110px] rounded-2xl"
               src="/assets/person5.webp"
               alt="professional image"
             />
           </div>
-          <div className="float-start mt-2">
+          <div className="flex self-start rounded-2xl">
             <img
-              className="h-[50%] w-[50%] rounded-2xl"
+              className="max-h-[110px] max-w-[110px] rounded-2xl"
               src="/assets/person6.webp"
               alt="professional image"
             />
