@@ -9,8 +9,8 @@ export default function HomePage() {
     <>
       <div className="bg-gray-100/70">
         <HeroSection />
-        <div className="aboutus grid-cols-2 flex justify-center items-center gap-40 py-20 bg-white">
-          <div className="w-[550px]">
+        <section className="aboutus grid-cols-2 flex items-center justify-center flex-wrap gap-40 py-20 bg-white">
+          <div className="w-[550px] flex flex-col">
             <div className="flex mb-4">
               <img src="/assets/flag.svg" alt="flags-up" />
               <span className="text-[--color-text] font-medium px-3">
@@ -21,7 +21,7 @@ export default function HomePage() {
               Unlock Your True Potential And Discover A World Of Opportunities
               That Align With Your Skills, Interests, And Aspirations
             </p>
-            <div className="company-logos flex justify-between items-center mt-10">
+            <div className="company-logos flex justify-between flex-wrap items-center">
               <img
                 className="h-7"
                 src="/assets/spotify.webp"
@@ -66,7 +66,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <div className="Marquee overflow-hidden">
           <Slider />
         </div>

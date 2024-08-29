@@ -176,24 +176,12 @@ const footerNavElements = [
 export const FooterNav = () => {
   return (
     <>
-      <div className="container mx-auto flex justify-center my-10 px-16">
-        <ul className="grid-cols-5 grid gap-x-20 gap-y-12">
+      <div className="container mx-auto flex justify-center my-10 px-1">
+        <ul className="flex flex-wrap justify-center gap-10">
           {footerNavElements.map((item) => (
             <li key={item.id}>
-              <div>
+              <div className="w-[190px] px-5">
                 <h1 className="font-bold mb-2">{item.title}</h1>
-                {/* <ul>
-                  {item.Element.map((el, index) =>
-                    Object.values(el).map((value) => (
-                      <li
-                        key={index}
-                        className="mb-1 hover:text-gray-500/70 text-gray-500"
-                      >
-                        <Link to={}>{value}</Link>
-                      </li>
-                    ))
-                  )}
-                </ul> */}
                 <ul>
                   {item.Element.map((el) => {
                     const dataKeys = Object.keys(el).filter((key) =>
