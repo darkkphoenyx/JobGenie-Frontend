@@ -9,7 +9,7 @@ export default function HomePage() {
     <>
       <div className="bg-gray-100/70">
         <HeroSection />
-        <section className="aboutus flex items-center justify-center flex-wrap gap-60 py-20 bg-white">
+        <section className="aboutus flex items-center justify-center flex-wrap gap-x-60 gap-y-14 py-20 bg-white">
           <div className="w-[550px] flex flex-col px-5 sm:px-0">
             <div className="flex mb-4">
               <img src="/assets/flag.svg" alt="flags-up" />
@@ -23,22 +23,22 @@ export default function HomePage() {
             </p>
             <div className="company-logos flex justify-between flex-wrap items-center mt-4">
               <img
-                className="h-7"
+                className="sm:h-7 h-5"
                 src="/assets/spotify.webp"
                 alt="spotify logo"
               />
               <img
-                className="h-11"
+                className="sm:h-11 h-9"
                 src="/assets/microsoft.webp"
                 alt="spotify logo"
               />
               <img
-                className="h-5"
+                className="sm:h-5 h-4"
                 src="/assets/macfee.webp"
                 alt="spotify logo"
               />
               <img
-                className="h-7"
+                className="sm:h-7 h-5"
                 src="/assets/google.webp"
                 alt="spotify logo"
               />
