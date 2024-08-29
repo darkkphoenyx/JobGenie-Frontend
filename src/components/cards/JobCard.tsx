@@ -87,11 +87,14 @@ export const JobCard = () => {
           align with your skills, interests, and aspirations
         </p>
       </div>
-      <div className="jobCard-render container flex mx-auto justify-center pb-20">
-        <ul role="list" className="grid-cols-3 grid gap-y-10">
+      <div className="j">
+        <ul
+          role="list"
+          className="jobCard-render container mx-auto pb-10 flex flex-wrap gap-10 items-center justify-center"
+        >
           {cards.map((item) => (
             <li key={item.id}>
-              <div className="w-4/5 mx-auto p-5 rounded-2xl h-full bg-white">
+              <div className="w-[300px] mx-auto p-5 rounded-2xl h-full bg-white">
                 <div className="flex justify-between items-center flex-wrap">
                   <div className="font-semibold">
                     <h1>{item.title}</h1>
