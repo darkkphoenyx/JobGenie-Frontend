@@ -25,15 +25,15 @@ const review = [
 export default function Testimonials() {
   return (
     <>
-      <div className="testimonial flex items-center justify-between gap-5 container mx-auto py-12 bg-white">
-        <div className="left-section ml-10 w-[30%]">
-          <div className="flex mb-5">
+      <div className="testimonial container mx-auto gap-x-20 flex justify-center items-center flex-wrap py-12 bg-white">
+        <div className="left-section w-[400px]">
+          <div className="flex mb-5 justify-center sm:justify-start">
             <img src="/assets/chat.svg" alt="flags-up" />
             <span className="text-[--color-text] font-medium px-3">
               Testimonials
             </span>
           </div>
-          <div className="notice">
+          <div className="notice flex flex-col text-center sm:text-left">
             <h1 className="font-medium text-4xl mb-5 ">
               Reviews of people who got jobs using Job Genie
             </h1>
@@ -48,7 +48,7 @@ export default function Testimonials() {
             </Link>
           </div>
         </div>
-        <div className="user-reviews-section w-[60%] flex items-center justify-end flex-wrap pr-10">
+        <div className="right-section w-[700px]">
           <ul>
             {review.map((item) => (
               <li className="my-10" key={item.id}>

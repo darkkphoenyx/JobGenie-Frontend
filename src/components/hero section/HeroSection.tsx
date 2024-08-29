@@ -1,5 +1,5 @@
 export default function HeroSection() {
-  const header = "font-medium text-5xl my-5";
+  const header = "font-medium text-2xl md:text-5xl sm:text-3xl my-5";
   return (
     <>
       <div className="main text-center mx-auto flex justify-center w-full  bg-[url(/assets/background.webp)] bg-no-repeat bg-center bg-cover">
@@ -27,8 +27,8 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="mid-section h-[88vh] pt-20">
-          <span className=" flex justify-center items-center flex-wrap shrink">
-            <span className="font-medium flex text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl px-5 py-2 mb-5">
+          <span className=" flex justify-center items-center flex-wrap">
+            <span className="font-medium flex items-center text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl px-5 py-2 mb-5 text-sm md:text-md sm:text-base">
               <img
                 className="pr-3"
                 src="/assets/thumbs-up.svg"

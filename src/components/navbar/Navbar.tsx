@@ -13,7 +13,7 @@ export default function Navbar() {
             alt="company logo"
           />
           <Link to={"/"}>
-            <div className="company-name">
+            <div className="company-name text-xs sm:text-base">
               <h1 className="font-semibold">Job Genie</h1>
               <p className="text-xs text-gray-400">
                 The Ultimate for Job Seekers
@@ -22,7 +22,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="nav-main h-max font-medium">
-          <ul className="flex gap-12 items-center  my-9">
+          <ul className="flex gap-12 items-center my-9">
             <li className="h-6">
               <Link to={"/"}>
                 {" "}
