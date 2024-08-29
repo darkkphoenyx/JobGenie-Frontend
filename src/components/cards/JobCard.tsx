@@ -69,7 +69,7 @@ const cards = [
 export const JobCard = () => {
   return (
     <>
-      <div className="container mx-auto text-center my-20">
+      <div className="container mx-auto text-center py-16">
         <div className="flex justify-center mb-5">
           <img src="/assets/combine.svg" alt="combine tile logo" />
           <h1 className="text-[--color-text] font-medium pl-5">
@@ -87,7 +87,7 @@ export const JobCard = () => {
           align with your skills, interests, and aspirations
         </p>
       </div>
-      <div className="j">
+      <div className="pb-8">
         <ul
           role="list"
           className="jobCard-render container mx-auto pb-10 flex flex-wrap gap-10 items-center justify-center"

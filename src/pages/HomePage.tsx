@@ -9,9 +9,9 @@ export default function HomePage() {
     <>
       <div className="bg-gray-100/70">
         <HeroSection />
-        <section className="aboutus flex items-center justify-center flex-wrap gap-x-60 gap-y-14 py-20 bg-white">
-          <div className="w-[550px] flex flex-col px-5 sm:px-0">
-            <div className="flex mb-4">
+        <section className="aboutus flex items-center justify-center flex-wrap gap-x-60 gap-y-14 py-16 bg-white">
+          <div className="w-[550px] flex flex-col px-5 sm:px-0 text-center sm:text-start">
+            <div className="flex mb-4 justify-center sm:justify-start">
               <img src="/assets/flag.svg" alt="flags-up" />
               <span className="text-[--color-text] font-medium px-3">
                 More about Job Genie

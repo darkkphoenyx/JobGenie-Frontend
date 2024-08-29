@@ -25,7 +25,7 @@ const review = [
 export default function Testimonials() {
   return (
     <>
-      <div className="testimonial container mx-auto gap-x-20 flex justify-center items-center flex-wrap py-12 bg-white">
+      <div className="testimonial container mx-auto gap-x-20 flex justify-center items-center flex-wrap py-16 bg-white">
         <div className="left-section w-[400px]">
           <div className="flex mb-5 justify-center sm:justify-start">
             <img src="/assets/chat.svg" alt="flags-up" />

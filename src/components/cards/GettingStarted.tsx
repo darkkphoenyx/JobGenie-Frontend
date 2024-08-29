@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function GettingStarted() {
   return (
     <>
-      <div className="container mx-auto py-20">
+      <div className="container mx-auto pb-16">
         <div className="rounded-3xl bg-gradient-to-r from-cyan-500 to-[--color-text] px-10 py-16 text-white">
           <h1 className="font-medium text-4xl">
             Join our community of ambitious professionals today and unlock the
