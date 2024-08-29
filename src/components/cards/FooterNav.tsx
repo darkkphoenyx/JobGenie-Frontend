@@ -181,7 +181,9 @@ export const FooterNav = () => {
           {footerNavElements.map((item) => (
             <li key={item.id}>
               <div className="w-[190px] px-5">
-                <h1 className="font-bold mb-2">{item.title}</h1>
+                <h1 className="font-bold mb-2 sm:text-lg text-base">
+                  {item.title}
+                </h1>
                 <ul>
                   {item.Element.map((el) => {
                     const dataKeys = Object.keys(el).filter((key) =>
@@ -194,7 +196,7 @@ export const FooterNav = () => {
                     return dataKeys.map((dataKey, i) => (
                       <li
                         key={i}
-                        className="mb-1 hover:text-gray-500/70 text-gray-500"
+                        className="mb-1 hover:text-gray-500/70 text-gray-500 sm:text-base text-sm"
                       >
                         <Link to={(el as any)[linkKeys[i]]}>
                           {(el as any)[dataKey]}

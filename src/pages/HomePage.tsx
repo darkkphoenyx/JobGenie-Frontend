@@ -12,12 +12,12 @@ export default function HomePage() {
         <section className="aboutus flex items-center justify-center flex-wrap gap-x-60 gap-y-14 py-16 bg-white">
           <div className="w-[550px] flex flex-col px-5 sm:px-0 text-center sm:text-start">
             <div className="flex mb-4 justify-center sm:justify-start">
-              <img src="/assets/flag.svg" alt="flags-up" />
-              <span className="text-[--color-text] font-medium px-3">
+              <img className="sm:h-6 h-5" src="/assets/flag.svg" alt="flags-up" />
+              <span className="text-[--color-text] font-medium sm:pl-3 pl-2 text-sm sm:text-lg">
                 More about Job Genie
               </span>
             </div>
-            <p className="font-medium text-3xl">
+            <p className="font-medium sm:text-3xl text-2xl">
               Unlock Your True Potential And Discover A World Of Opportunities
               That Align With Your Skills, Interests, And Aspirations
             </p>

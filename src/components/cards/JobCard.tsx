@@ -71,18 +71,18 @@ export const JobCard = () => {
     <>
       <div className="container mx-auto text-center py-16">
         <div className="flex justify-center mb-5">
-          <img src="/assets/combine.svg" alt="combine tile logo" />
-          <h1 className="text-[--color-text] font-medium pl-5">
+          <img className="sm:h-6 h-5" src="/assets/combine.svg" alt="combine tile logo" />
+          <h1 className="text-[--color-text] font-medium sm:pl-5 pl-2 text-sm sm:text-lg">
             Job Genie's Features
           </h1>
         </div>
         <div className="w-4/5 mx-auto justify-center flex">
-          <h2 className="text-5xl">
+          <h2 className="sm:text-5xl text-2xl font-medium sm:font-normal">
             We Empower Job Seekers Like You To Streamline And Supercharge Your
             Job Search.
           </h2>
         </div>
-        <p className="mt-5 text-gray-500/80 w-2/5 mx-auto">
+        <p className="mt-5 text-gray-500/80 w-4/5 sm:w-2/5 mx-auto text-sm sm:text-lg">
           Unlock your true potential and discover a world of opportunities that
           align with your skills, interests, and aspirations
         </p>
@@ -97,9 +97,9 @@ export const JobCard = () => {
               <div className="w-[300px] mx-auto p-5 rounded-2xl h-full bg-white">
                 <div className="flex justify-between items-center flex-wrap">
                   <div className="font-semibold">
-                    <h1>{item.title}</h1>
+                    <h1 className="text-base">{item.title}</h1>
                     <div className="flex items-center flex-wrap">
-                      <h1 className="font-medium text-gray-500/70 pr-3">
+                      <h1 className="font-medium text-gray-500/70 pr-3 text-sm">
                         {item.companyName}
                       </h1>
                       <img
@@ -111,7 +111,7 @@ export const JobCard = () => {
                   </div>
                   <div>
                     <img
-                      className="w-10 rounded-md"
+                      className="sm:w-10 w-8 rounded-md"
                       src={item.image}
                       alt={item.companyName}
                     />
@@ -137,7 +137,7 @@ export const JobCard = () => {
                   <p className="pl-2 text-sm">{item.type}</p>
                 </div>
                 <a href={item.link}>
-                  <button className="bg-black transition-all hover:bg-white border border-black hover:text-black font-medium text-white text-center w-full rounded-3xl py-4 mt-5">
+                  <button className="bg-black transition-all hover:bg-white border border-black hover:text-black font-medium text-white text-center w-full rounded-3xl sm:py-3 py-2 mt-5 sm:text-base text-sm">
                     Apply Now
                   </button>
                 </a>

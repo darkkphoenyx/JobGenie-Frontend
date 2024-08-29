@@ -23,33 +23,33 @@ export default function Footer() {
                 </div>
               </Link>
             </div>
-            <div className="company-address text-gray-400">
-              <h1 className="text-gray-500 text-sm">Mitrapark-10, Chabahil</h1>
-              <h1 className="text-gray-500 text-sm">Kathmandu, Nepal</h1>
+            <div className="company-address text-gray-400 sm:text-sm text-xs">
+              <h1 className="text-gray-500">Mitrapark-10, Chabahil</h1>
+              <h1 className="text-gray-500">Kathmandu, Nepal</h1>
             </div>
           </div>
           <div className="right-section">
             <div className="Newsletter-section flex flex-col">
-              <h1 className="text-3xl font-medium">Newsletter</h1>
-              <p className="text-gray-500 text-sm">
+              <h1 className="sm:text-3xl text-xl font-medium">Newsletter</h1>
+              <p className="text-gray-500 sm:text-sm text-xs">
                 Subscribe to our newletter to get the latest Job Genie news
               </p>
             </div>
             <div className="flex items-center flex-wrap gap-y-2 mt-1">
               <div className="mt-1 send-email-section flex bg-white border border-gray-300 rounded-3xl px-4 sm:w-[70%] w-full mr-3 items-center">
                 <img
-                  className="pr-2 h-4"
+                  className="pr-2 sm:h-4 h-3"
                   src="/assets/mail.svg"
                   alt="mail icon"
                 />
                 <input
-                  className="outline-none text-sm bg-white py-3 w-full"
+                  className="outline-none text-sm bg-white py-3 w-full sm:placeholder:text-sm placeholder:text-xs"
                   type="email"
                   placeholder="Whats your work email?"
                 />
               </div>
               <a href="#">
-                <button className="hover:text-[--color-text] transition-all hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
+                <button className="sm:text-base text-sm hover:text-[--color-text] transition-all hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
                   Subscribe
                 </button>
               </a>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-middle container mx-auto py-10 border-b transition-all">
-          <p className="text-gray-500 px-5">
+          <p className="text-gray-500 px-5 sm:text-base text-sm">
             © 2023 Job Genie Business Corporation. "Job Genie" and the Job Genie
             logo are registered trademarks of the company. *International
             payments may be subject to a currency conversion fee. Flex extended
