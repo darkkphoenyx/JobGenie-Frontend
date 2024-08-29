@@ -3,7 +3,7 @@ export default function HeroSection() {
   return (
     <>
       <div className="main text-center mx-auto flex justify-center w-full bg-[url(/assets/background.webp)] bg-no-repeat bg-center bg-cover">
-        <div className="left-section section pl-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]   sm:visible">
+        <div className="left-section section pl-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]">
           <div className="flex self-start">
             <img
               className="max-h-[110px] max-w-[110px] rounded-2xl bg-yellow-400 "
@@ -26,7 +26,7 @@ export default function HeroSection() {
             />
           </div>
         </div>
-        <div className="mid-section sm:h-[88vh] h-max pt-20">
+        <div className="mid-section md:h-[88vh] h-max pt-20">
           <span className=" flex justify-center items-center flex-wrap">
             <span className="font-medium flex items-center text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl sm:px-5 px-1 py-2 mb-5 text-sm md:text-md sm:text-base">
               <img
@@ -48,7 +48,7 @@ export default function HeroSection() {
               that align with your skills, interests, and aspirations
             </p>
           </div>
-          <div className="search-box bg-white rounded-2xl sm:w-[70%] w-max shadow-2xl px-3 mx-auto flex justify-between flex-wrap mt-10 border py-2">
+          <div className="search-box bg-white rounded-2xl md:w-[70%] w-max shadow-2xl px-3 mx-auto flex justify-between flex-wrap mt-10 border py-2">
             <div className="find-job flex justify-center items-center ">
               <img
                 className="sm:h-4 h-3"
