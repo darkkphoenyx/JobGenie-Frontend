@@ -52,7 +52,7 @@ export default function Testimonials() {
           <ul>
             {review.map((item) => (
               <li className="my-10" key={item.id}>
-                <div className="review-1 border rounded-2xl border-gray-100 p-5 shadow-2xl">
+                <div className={`review-1 border rounded-2xl border-gray-100 p-5 shadow-2xl -skew-y-2 -skew-x-3`}>
                   <div className="rating flex justify-between items-center text-gray-500 mt-2 flex-wrap">
                     <p className="px-5 py-1 border border-gray-300 rounded-3xl sm:text-sm text-xs">
                       User Testimonial
