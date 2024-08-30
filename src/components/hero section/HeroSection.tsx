@@ -3,27 +3,29 @@ export default function HeroSection() {
   return (
     <>
       <div className="main text-center mx-auto flex justify-center w-full bg-[url(/assets/background.webp)] bg-no-repeat bg-center bg-cover">
-        <div className="left-section section pl-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]">
-          <div className="flex self-start">
-            <img
-              className="max-h-[110px] max-w-[110px] rounded-2xl bg-yellow-400 "
-              src="/assets/person1.webp"
-              alt="professional image"
-            />
-          </div>
-          <div className="flex self-end rounded-2xl">
-            <img
-              className="max-h-[110px] max-w-[110px] rounded-2xl"
-              src="/assets/person2.webp"
-              alt="professional image"
-            />
-          </div>
-          <div className="flex self-start rounded-2xl">
-            <img
-              className="max-h-[110px] max-w-[110px] rounded-2xl"
-              src="/assets/person3.webp"
-              alt="professional image"
-            />
+        <div className=" left-section sm:block hidden">
+          <div className="section pl-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]">
+            <div className="flex self-start">
+              <img
+                className="max-h-[110px] max-w-[110px] rounded-2xl bg-yellow-400 "
+                src="/assets/person1.webp"
+                alt="professional image"
+              />
+            </div>
+            <div className="flex self-end rounded-2xl">
+              <img
+                className="max-h-[110px] max-w-[110px] rounded-2xl"
+                src="/assets/person2.webp"
+                alt="professional image"
+              />
+            </div>
+            <div className="flex self-start rounded-2xl">
+              <img
+                className="max-h-[110px] max-w-[110px] rounded-2xl"
+                src="/assets/person3.webp"
+                alt="professional image"
+              />
+            </div>
           </div>
         </div>
         <div className="mid-section md:h-[88vh] h-max pt-20">
@@ -78,27 +80,29 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="right-section section pr-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]">
-          <div className="flex self-start">
-            <img
-              className="max-h-[110px] max-w-[110px] rounded-2xl bg-yellow-400 "
-              src="/assets/person4.webp"
-              alt="professional image"
-            />
-          </div>
-          <div className="flex self-end rounded-2xl">
-            <img
-              className="max-h-[110px] max-w-[110px] rounded-2xl"
-              src="/assets/person5.webp"
-              alt="professional image"
-            />
-          </div>
-          <div className="flex self-start rounded-2xl">
-            <img
-              className="max-h-[110px] max-w-[110px] rounded-2xl"
-              src="/assets/person6.webp"
-              alt="professional image"
-            />
+        <div className=" right-section sm:block hidden">
+          <div className="section pr-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]">
+            <div className="flex self-start">
+              <img
+                className="max-h-[110px] max-w-[110px] rounded-2xl bg-yellow-400 "
+                src="/assets/person4.webp"
+                alt="professional image"
+              />
+            </div>
+            <div className="flex self-end rounded-2xl">
+              <img
+                className="max-h-[110px] max-w-[110px] rounded-2xl"
+                src="/assets/person5.webp"
+                alt="professional image"
+              />
+            </div>
+            <div className="flex self-start rounded-2xl">
+              <img
+                className="max-h-[110px] max-w-[110px] rounded-2xl"
+                src="/assets/person6.webp"
+                alt="professional image"
+              />
+            </div>
           </div>
         </div>
       </div>
