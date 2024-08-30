@@ -6,7 +6,7 @@ export default function HeroSection() {
         <div className="left-section section pl-10 flex flex-col justify-between mt-20 w-[250px] h-[400px]">
           <div className="flex self-start">
             <img
-              className="max-h-[110px] max-w-[110px] rounded-2xl bg-yellow-400 "
+              className="h-[140px] w-[140px] rounded-2xl bg-yellow-400 "
               src="/assets/person1.webp"
               alt="professional image"
             />
@@ -88,7 +88,7 @@ export default function HeroSection() {
           </div>
           <div className="flex self-end rounded-2xl">
             <img
-              className="max-h-[110px] max-w-[110px] rounded-2xl"
+              className="h-[140px] w-[140px] rounded-2xl"
               src="/assets/person5.webp"
               alt="professional image"
             />
