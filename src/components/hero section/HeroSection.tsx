@@ -61,35 +61,36 @@ export default function HeroSection() {
             that align with your skills, interests, and aspirations
           </p>
         </div>
-        <div className="search-box bg-white rounded-2xl md:w-[70%] w-max shadow-2xl px-3 mx-auto flex justify-between flex-wrap mt-10 border py-2">
-          <div className="find-job flex justify-center items-center">
-            <img
-              className="sm:h-4 h-3"
-              src="/assets/search.svg"
-              alt="search icon"
-            />
+        
+        <div className="mt-5 search-box bg-white rounded-2xl w-full max-w-screen-lg mx-auto shadow-2xl px-3 py-2 border flex flex-col md:flex-row md:justify-between md:items-center md:space-x-4">
+          <div className="find-job flex items-center mb-2 md:mb-0">
+            <img className="h-4" src="/assets/search.svg" alt="search icon" />
             <input
-              className="pl-2 outline-none sm:text-base text-xs"
+              className="pl-2 outline-none text-sm md:text-base"
               type="text"
               placeholder="Find job here"
             />
           </div>
-          <div className="find-job flex justify-center items-center">
+
+          <div className="find-job flex items-center mb-2 md:mb-0">
             <img
-              className="sm:h-4 h-3"
+              className="h-4"
               src="/assets/map-pin.svg"
               alt="location icon"
             />
             <input
-              className="pl-2 outline-none sm:text-base text-xs"
+              className="pl-2 outline-none text-sm md:text-base"
               type="text"
               placeholder="Kathmandu, Nepal"
             />
           </div>
-          <button className="hover:text-[--color-text] transition-all hover:bg-white text-white border hover:border-[--color-text] bg-[--color-text] sm:px-3 px-2 sm:py-2 py-1 rounded-3xl sm:text-base text-sm">
+
+          <button className="hover:text-[--color-text] transition-all hover:bg-white text-white border hover:border-[--color-text] bg-[--color-text] px-3 py-2 rounded-3xl text-sm md:text-base">
             Search
           </button>
         </div>
+
+        
       </div>
 
       <div className="right-section section pr-10 hidden  md:flex flex-col justify-between mt-20 w-[250px] h-[400px]">
