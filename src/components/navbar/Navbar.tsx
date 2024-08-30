@@ -6,114 +6,141 @@ export default function Navbar() {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div className="shadow-md w-full sticky top-0 bg-white/90 z-50 flex items-center justify-between px-5 gap-5">
-      <div className="logo_section flex items-center space-x-2">
-        <img
-          className="object-fill h-12 w-12"
-          src="/assets/company-logo.webp"
-          alt="company logo"
-        />
-        <Link to={"/"}>
-          <div className="company-name text-xs sm:text-base">
-            <h1 className="font-semibold">Job Genie</h1>
-            <p className="text-xs text-gray-400">
-              The Ultimate for Job Seekers
+    <div className="navbar sticky top-0 bg-white/90 shadow-md z-50">
+      <div className="flex items-center container mx-auto px-4 py-2 justify-between">
+        <div className="flex items-center space-x-2">
+          <img
+            className="object-cover h-10 w-10"
+            src="/assets/company-logo.webp"
+            alt="company logo"
+          />
+          <Link to="/">
+            <div className="text-xs sm:text-base">
+              <h1 className="font-semibold">Job Genie</h1>
+              <p className="text-gray-400">The Ultimate for Job Seekers</p>
+            </div>
+          </Link>
+        </div>
+        <div className="hidden lg:flex items-center space-x-8">
+          <NavLink to="/" label="Find Job" currentPath={location.pathname} />
+          <NavLink
+            to="/recruiter"
+            label="For Recruiters"
+            currentPath={location.pathname}
+          />
+          <NavLink to="/blogs" label="Blogs" currentPath={location.pathname} />
+          <NavLink
+            to="/careertips"
+            label="Career Tips"
+            currentPath={location.pathname}
+          />
+        </div>
+        <div className="hidden lg:flex items-center space-x-4">
+          <Link to="/login">
+            <button className="px-4 py-2 font-semibold transition-all rounded-3xl hover:bg-gray-400/70 active:translate-y-0.5">
+              Login
+            </button>
+          </Link>
+          <Link to="/register">
+            <button className="px-5 py-2 border rounded-3xl text-[--color-text] font-semibold border-[--color-text] hover:bg-[--color-text] hover:text-white transition-all active:translate-y-0.5">
+              Register Now
+            </button>
+          </Link>
+        </div>
+        <div className="lg:hidden flex items-center">
+          <button onClick={() => setVisible(!visible)}>
+            <img className="w-6 h-6" src="/assets/menu.svg" alt="menu" />
+          </button>
+        </div>
+      </div>
+      {visible && (
+        <div className="lg:hidden flex flex-col items-center bg-white shadow-md">
+          <NavLinkMobile
+            to="/"
+            label="Find Job"
+            currentPath={location.pathname}
+            setVisible={setVisible}
+          />
+          <NavLinkMobile
+            to="/recruiter"
+            label="For Recruiters"
+            currentPath={location.pathname}
+            setVisible={setVisible}
+          />
+          <NavLinkMobile
+            to="/blogs"
+            label="Blogs"
+            currentPath={location.pathname}
+            setVisible={setVisible}
+          />
+          <NavLinkMobile
+            to="/careertips"
+            label="Career Tips"
+            currentPath={location.pathname}
+            setVisible={setVisible}
+          />
+          <Link to="/login" onClick={() => setVisible(false)}>
+            <p className="mt-1 py-1 text-[--color-text] hover:bg-gray-200 transition-all border border-[--color-text] px-10 rounded-3xl font-medium">
+              Login
             </p>
-          </div>
-        </Link>
-      </div>
-      <div className="navbar sm:block hidden ">
-        <div className="flex items-center h-[12vh] justify-between px-3 container mx-auto">
-          <div className="nav-main h-max font-medium">
-            <ul className="flex gap-12 items-center my-9">
-              <li className="h-6">
-                <Link to={"/"}>
-                  {" "}
-                  {location.pathname == "/" ? (
-                    <p className="border-b-2 border-[--color-text] text-[--color-text]">
-                      Find Job
-                    </p>
-                  ) : (
-                    "Find Job"
-                  )}
-                </Link>
-              </li>
-              <li className="h-6">
-                <Link to={"/recruiter"}>
-                  {location.pathname == "/recruiter" ? (
-                    <p className="border-b-2 border-[--color-text] text-[--color-text]">
-                      For Recruiters
-                    </p>
-                  ) : (
-                    "For Recruiters"
-                  )}
-                </Link>
-              </li>
-              <li className="h-6">
-                <Link to={"/blogs"}>
-                  {location.pathname == "/blogs" ? (
-                    <p className="border-b-2 border-[--color-text] text-[--color-text]">
-                      Blogs
-                    </p>
-                  ) : (
-                    "Blogs"
-                  )}
-                </Link>
-              </li>
-              <li className="h-6">
-                <Link to={"/careertips"}>
-                  {location.pathname == "/careertips" ? (
-                    <p className="border-b-2 border-[--color-text] text-[--color-text]">
-                      Career tips
-                    </p>
-                  ) : (
-                    "Career tips"
-                  )}
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="nav-login">
-            <Link to={"/login"}>
-              <button className="px-4 mr-2 font-semibold transition-all rounded-3xl py-2 hover:bg-gray-400/70">
-                Login
-              </button>
-            </Link>
-            <Link to={"/register"}>
-              <button className="hover:text-white transition-all hover:bg-[--color-text] px-5 border py-2 rounded-3xl text-[--color-text] font-semibold border-[--color-text]">
-                Register Now
-              </button>
-            </Link>
-          </div>
+          </Link>
+          <Link to="/register" onClick={() => setVisible(false)}>
+            <p className="my-2 py-1 text-white hover:bg-gray-200 bg-[--color-text] transition-all border border-[--color-text] px-10 rounded-3xl font-medium">
+              Register Now
+            </p>
+          </Link>
         </div>
-      </div>
-      <div className="block sm:hidden hamburger-menu">
-        <button onClick={() => setVisible(!visible)}>
-          <div>
-            <img src="/assets/menu.svg" alt="hamburger menu" />
-          </div>
-        </button>
-      </div>
-      {visible ? (
-        <div className="menu">
-          <ul>
-            <li>
-              <Link to={"/"}>Find job</Link>
-            </li>
-            <li>
-              <Link to={"/recruiter"}>For Recruiters</Link>
-            </li>
-            <li>
-              <Link to={"/blogs"}>Blogs</Link>
-            </li>
-            <li>
-              <Link to={"/careertips"}>Career tips</Link>
-            </li>
-          </ul>
-        </div>
-      ) : (
-        ""
       )}
     </div>
+  );
+}
+
+function NavLink({
+  to,
+  label,
+  currentPath,
+}: {
+  to: string;
+  label: string;
+  currentPath: string;
+}) {
+  const isActive = currentPath === to;
+  return (
+    <Link to={to}>
+      <p
+        className={`transition-all duration-300 ease-in-out ${
+          isActive
+            ? "border-b-2 border-[--color-text] text-[--color-text]"
+            : "hover:text-[--color-text]"
+        }`}
+      >
+        {label}
+      </p>
+    </Link>
+  );
+}
+
+function NavLinkMobile({
+  to,
+  label,
+  currentPath,
+  setVisible,
+}: {
+  to: string;
+  label: string;
+  currentPath: string;
+  setVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+  const isActive = currentPath === to;
+  return (
+    <Link to={to} onClick={() => setVisible(false)}>
+      <p
+        className={`py-2 px-4 text-sm transition-all ${
+          isActive ? "bg-gray-200 text-[--color-text]" : "hover:bg-gray-200"
+        }`}
+      >
+        {label}
+      </p>
+    </Link>
   );
 }

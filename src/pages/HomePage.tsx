@@ -9,11 +9,12 @@ export default function HomePage() {
     <>
       <div className="bg-gray-100/70">
         <HeroSection />
-        <section className="aboutus flex items-center justify-center flex-wrap gap-x-60 gap-y-14 py-16 bg-white">
-          <div className="w-[550px] flex flex-col px-5 sm:px-0 text-center sm:text-start">
-            <div className="flex mb-4 justify-center sm:justify-start">
+
+        <section className="aboutus flex flex-col items-center justify-center gap-y-10 py-16 px-10 bg-white sm:flex-row sm:gap-x-20 sm:gap-y-0">
+          <div className="text-center sm:text-left w-full max-w-3xl px-5 sm:px-0">
+            <div className="flex justify-center sm:justify-start mb-4">
               <img
-                className="sm:h-6 h-5"
+                className="h-5 sm:h-6"
                 src="/assets/flag.svg"
                 alt="flags-up"
               />
@@ -21,68 +22,73 @@ export default function HomePage() {
                 More about Job Genie
               </span>
             </div>
-            <p className="font-medium sm:text-3xl text-2xl">
+            <p className="font-medium text-2xl sm:text-3xl">
               Unlock Your True Potential And Discover A World Of Opportunities
               That Align With Your Skills, Interests, And Aspirations
             </p>
             <div className="company-logos flex justify-between flex-wrap items-center mt-4">
               <img
-                className="sm:h-7 h-5"
+                className="h-5 sm:h-7"
                 src="/assets/spotify.webp"
                 alt="spotify logo"
               />
               <img
-                className="sm:h-11 h-9"
+                className="h-9 sm:h-11"
                 src="/assets/microsoft.webp"
-                alt="spotify logo"
+                alt="microsoft logo"
               />
               <img
-                className="sm:h-5 h-4"
+                className="h-4 sm:h-5"
                 src="/assets/macfee.webp"
-                alt="spotify logo"
+                alt="macfee logo"
               />
               <img
-                className="sm:h-7 h-5"
+                className="h-5 sm:h-7"
                 src="/assets/google.webp"
-                alt="spotify logo"
+                alt="google logo"
               />
             </div>
           </div>
-          <div className="grid-col-2 flex gap-20">
-            <div>
-              <div className="text-center mb-10">
+
+          <div className="grid grid-cols-2 gap-10 mt-10 sm:mt-0">
+            <div className="text-center">
+              <div className="mb-10">
                 <h1 className="text-3xl font-medium">400K</h1>
                 <p className="text-gray-500">Job list</p>
               </div>
-              <div className="text-center">
+              <div>
                 <h1 className="text-3xl font-medium">800K</h1>
                 <p className="text-gray-500">People hired</p>
               </div>
             </div>
-            <div>
-              <div className="text-center mb-10">
+            <div className="text-center">
+              <div className="mb-10">
                 <h1 className="text-3xl font-medium">20K</h1>
-                <p className="text-gray-500">Company</p>
+                <p className="text-gray-500">Companies</p>
               </div>
-              <div className="text-center">
+              <div>
                 <h1 className="text-3xl font-medium">120</h1>
                 <p className="text-gray-500">Available countries</p>
               </div>
             </div>
           </div>
         </section>
+
         <div className="Marquee overflow-hidden -skew-y-3">
           <Slider />
         </div>
-        <div id="jobs">
+
+        <section id="jobs">
           <JobCard />
-        </div>
-        <div id="testimonial" className="bg-white">
+        </section>
+
+        <section id="testimonial" className="bg-white">
           <Testimonials />
-        </div>
-        <div className=" bg-white" id="gettingStarted">
+        </section>
+
+        <section id="gettingStarted" className="bg-white">
           <GettingStarted />
-        </div>
+        </section>
       </div>
     </>
   );

@@ -1,215 +1,137 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link } from "react-router-dom";
 
 const footerNavElements = [
   {
     id: 1,
     title: "Explores",
-    Element: [
-      {
-        data1: "Communities",
-        data2: "Recuiter",
-        data3: "Jobs",
-        data4: "Events",
-        data5: "Forum",
-        link1: "https://www.youtube.com",
-        link2: "",
-        link3: "",
-        link4: "",
-        link5: "",
-      },
+    links: [
+      { text: "Communities", href: "https://www.youtube.com" },
+      { text: "Recuiter", href: "" },
+      { text: "Jobs", href: "" },
+      { text: "Events", href: "" },
+      { text: "Forum", href: "" },
     ],
   },
   {
     id: 2,
     title: "Hire Learning",
-    Element: [
-      {
-        data1: "Articles",
-        data2: "Guides",
-        data3: "Templates",
-        data4: "Reports",
-        data5: "Courses",
-        link1: "",
-        link2: "",
-        link3: "",
-        link4: "",
-        link5: "",
-      },
+    links: [
+      { text: "Articles", href: "" },
+      { text: "Guides", href: "" },
+      { text: "Templates", href: "" },
+      { text: "Reports", href: "" },
+      { text: "Courses", href: "" },
     ],
   },
   {
     id: 3,
     title: "Resources",
-    Element: [
-      {
-        data1: "Blogs",
-        data2: "Podcast",
-        data3: "Content library",
-        link1: "",
-        link2: "",
-        link3: "",
-      },
+    links: [
+      { text: "Blogs", href: "" },
+      { text: "Podcast", href: "" },
+      { text: "Content library", href: "" },
     ],
   },
   {
     id: 4,
     title: "Product",
-    Element: [
-      {
-        data1: "Attract",
-        data2: "Quality",
-        data3: "Hire",
-        data4: "Pricing",
-        data5: "Customers",
-        data6: "Partners",
-        link1: "",
-        link2: "",
-        link3: "",
-        link4: "",
-        link5: "",
-        link6: "",
-      },
+    links: [
+      { text: "Attract", href: "" },
+      { text: "Quality", href: "" },
+      { text: "Hire", href: "" },
+      { text: "Pricing", href: "" },
+      { text: "Customers", href: "" },
+      { text: "Partners", href: "" },
     ],
   },
   {
     id: 5,
     title: "Support",
-    Element: [
-      {
-        data1: "Help center",
-        data2: "Developer API",
-        data3: "Status",
-        link1: "",
-        link2: "",
-        link3: "",
-      },
+    links: [
+      { text: "Help center", href: "" },
+      { text: "Developer API", href: "" },
+      { text: "Status", href: "" },
     ],
   },
   {
     id: 6,
     title: "For job seekers",
-    Element: [
-      {
-        data1: "Go pro",
-        data2: "Code of onduct",
-        data3: "Financial statement",
-        data4: "Press release",
-        data5: "Prospectus",
-        link1: "",
-        link2: "",
-        link3: "",
-        link4: "",
-        link5: "",
-      },
+    links: [
+      { text: "Go pro", href: "" },
+      { text: "Code of conduct", href: "" },
+      { text: "Financial statement", href: "" },
+      { text: "Press release", href: "" },
+      { text: "Prospectus", href: "" },
     ],
   },
   {
     id: 7,
     title: "Integrations",
-    Element: [
-      {
-        data1: "Slack",
-        data2: "Xero",
-        data3: "1 Password",
-        data4: "Sage",
-        data5: "Netsuite",
-        link1: "",
-        link2: "",
-        link3: "",
-        link4: "",
-        link5: "",
-      },
+    links: [
+      { text: "Slack", href: "" },
+      { text: "Xero", href: "" },
+      { text: "1 Password", href: "" },
+      { text: "Sage", href: "" },
+      { text: "Netsuite", href: "" },
     ],
   },
   {
     id: 8,
     title: "Solutions",
-    Element: [
-      {
-        data1: "Human resources",
-        data2: "Sales & marketing",
-        data3: "Financial",
-        data4: "Investor",
-        data5: "Revenue",
-        link1: "",
-        link2: "",
-        link3: "",
-        link4: "",
-        link5: "",
-      },
+    links: [
+      { text: "Human resources", href: "" },
+      { text: "Sales & marketing", href: "" },
+      { text: "Financial", href: "" },
+      { text: "Investor", href: "" },
+      { text: "Revenue", href: "" },
     ],
   },
   {
     id: 9,
     title: "Company",
-    Element: [
-      {
-        data1: "Find Jobs",
-        data2: "For Recruiters",
-        data3: "Blogs",
-        data4: "Career tips",
-        link1: "/",
-        link2: "/recruiter",
-        link3: "/blogs",
-        link4: "/careerTips",
-      },
+    links: [
+      { text: "Find Jobs", href: "/" },
+      { text: "For Recruiters", href: "/recruiter" },
+      { text: "Blogs", href: "/blogs" },
+      { text: "Career tips", href: "/careertips" },
     ],
   },
   {
     id: 10,
     title: "Policies",
-    Element: [
-      {
-        data1: "Community guidelines",
-        data2: "Terms of use",
-        data3: "Privacy policy",
-        data4: "Legal cookies",
-        link1: "",
-        link2: "",
-        link3: "",
-        link4: "",
-      },
+    links: [
+      { text: "Community guidelines", href: "" },
+      { text: "Terms of use", href: "" },
+      { text: "Privacy policy", href: "" },
+      { text: "Legal cookies", href: "" },
     ],
   },
 ];
+
 export const FooterNav = () => {
   return (
-    <>
-      <div className="container mx-auto flex justify-center my-10 px-1">
-        <ul className="flex flex-wrap justify-center gap-10">
-          {footerNavElements.map((item) => (
-            <li key={item.id}>
-              <div className="w-[190px] px-5">
-                <h1 className="font-bold mb-2 sm:text-lg text-base">
-                  {item.title}
-                </h1>
-                <ul>
-                  {item.Element.map((el) => {
-                    const dataKeys = Object.keys(el).filter((key) =>
-                      key.startsWith("data")
-                    );
-                    const linkKeys = Object.keys(el).filter((key) =>
-                      key.startsWith("link")
-                    );
-
-                    return dataKeys.map((dataKey, i) => (
-                      <li
-                        key={i}
-                        className="mb-1 hover:text-gray-500/70 text-gray-500 sm:text-base text-sm"
-                      >
-                        <Link to={(el as any)[linkKeys[i]]}>
-                          {(el as any)[dataKey]}
-                        </Link>
-                      </li>
-                    ));
-                  })}
-                </ul>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
+    <div className="container mx-auto flex justify-center my-10 px-1">
+      <ul className="flex flex-wrap justify-center gap-10">
+        {footerNavElements.map((item) => (
+          <li key={item.id}>
+            <div className="w-[190px] px-5">
+              <h1 className="font-bold mb-2 sm:text-lg text-base">
+                {item.title}
+              </h1>
+              <ul>
+                {item.links.map((link, i) => (
+                  <li
+                    key={i}
+                    className="mb-1 hover:text-gray-500/70 text-gray-500 sm:text-base text-sm"
+                  >
+                    <Link to={link.href}>{link.text}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
