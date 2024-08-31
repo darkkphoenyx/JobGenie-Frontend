@@ -16,12 +16,12 @@ export default function Navbar() {
           />
           <Link to="/">
             <div className="text-xs sm:text-base">
-              <h1 className="font-semibold">Job Genie</h1>
-              <p className="text-gray-400">The Ultimate for Job Seekers</p>
+              <h1 className="font-semibold text-xl">Job Genie</h1>
+              <p className="text-gray-400 text-xs">The Ultimate for Job Seekers</p>
             </div>
           </Link>
         </div>
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8 font-medium">
           <NavLink to="/" label="Find Job" currentPath={location.pathname} />
           <NavLink
             to="/recruiter"
