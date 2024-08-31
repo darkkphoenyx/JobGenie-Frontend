@@ -8,7 +8,7 @@ export default function RegistrationPage() {
 
       <div className="relative z-10 h-full grid grid-cols-1 md:grid-cols-2">
         {/* Left Side: Form Section */}
-        <div className="bg-white/80 flex flex-col justify-center items-center p-1 md:p-0 shadow-2xl rounded-md md:rounded-r-3xl">
+        <div className="bg-white/80 flex flex-col pt-4 md:pt-2 items-center p-1 md:p-0 shadow-2xl rounded-md md:rounded-r-3xl">
           <div className="w-full max-w-md">
             <div className="mb-6 text-center">
               <h1 className="text-3xl md:text-4xl font-bold text-[--color-text]">
@@ -29,6 +29,14 @@ export default function RegistrationPage() {
                 Login
               </Link>
             </div>
+          </div>
+          <div className=" block md:hidden mt-5 active:translate-y-1 transition-all">
+            <Link
+              to={"/"}
+              className="bg-black/90 text-white py-2 px-4 rounded-full text-center"
+            >
+              Back to Home
+            </Link>
           </div>
         </div>
 
@@ -61,17 +69,7 @@ export default function RegistrationPage() {
             </h1>
           </div>
         </div>
-        <div className=" block md:hidden absolute bottom-4 left-1/2 transform -translate-x-1/2">
-          <Link
-            to={"/"}
-            className="bg-black/90 text-white py-2 px-4 rounded-full text-center"
-          >
-            Back to Home
-          </Link>
-        </div>
       </div>
-
-      {/* Back to Home Button: Visible only on mobile */}
     </div>
   );
 }

@@ -48,7 +48,7 @@ export default function Footer() {
               />
             </div>
             <Link to="#">
-              <button className="sm:text-base text-sm hover:text-[--color-text] transition-all hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
+              <button className="sm:text-base text-sm hover:text-[--color-text] active:translate-y-1 transition-all hover:bg-white border hover:border-[--color-text] text-white bg-[--color-text] px-3 py-2 rounded-3xl">
                 Subscribe
               </button>
             </Link>

@@ -42,7 +42,7 @@ export default function Testimonials() {
             that align with your skills, interests, and aspirations.
           </p>
           <Link to={"#"}>
-            <button className="mt-5 bg-[--color-text] text-white border border-[--color-text] hover:bg-white hover:text-[--color-text] transition-all font-medium text-sm sm:text-base px-7 py-2 sm:py-3 rounded-3xl">
+            <button className="mt-5 bg-[--color-text] text-white border border-[--color-text] hover:bg-white hover:text-[--color-text] active:translate-y-1 transition-all font-medium text-sm sm:text-base px-7 py-2 sm:py-3 rounded-3xl">
               More Stories
             </button>
           </Link>

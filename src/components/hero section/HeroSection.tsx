@@ -85,7 +85,7 @@ export default function HeroSection() {
             />
           </div>
 
-          <button className="hover:text-[--color-text] transition-all hover:bg-white text-white border hover:border-[--color-text] bg-[--color-text] px-3 py-2 rounded-3xl text-sm md:text-base">
+          <button className="hover:text-[--color-text] hover:bg-white text-white border hover:border-[--color-text] bg-[--color-text] px-3 py-2 rounded-3xl text-sm md:text-base active:translate-y-1 transition-all">
             Search
           </button>
         </div>

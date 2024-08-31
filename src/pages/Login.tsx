@@ -30,7 +30,7 @@ export default function Login() {
 
       {/* Right Side: Form Section */}
       <div className="col-span-12 md:col-span-6 flex flex-col justify-center items-center bg-white/90 rounded-t-3xl md:rounded-l-3xl shadow-2xl">
-        <div className="px-6 md:px-10 w-full max-w-sm md:max-w-md">
+        <div className="px-6 md:px-10 w-full max-w-sm md:max-w-md ">
           <div className="mb-5 text-center">
             <h1 className="text-3xl md:text-5xl font-bold text-[--color-text]">
               Welcome
@@ -72,7 +72,7 @@ export default function Login() {
             </Link>
           </div>
         </div>
-        <div className="block md:hidden mt-10">
+        <div className="block md:hidden mt-10 active:translate-y-1 transition-all">
           <Link
             to={"/"}
             className="bg-black/90 text-white py-2 px-4 rounded-full text-center"

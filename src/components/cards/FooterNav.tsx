@@ -114,7 +114,7 @@ export const FooterNav = () => {
       <ul className="flex flex-wrap justify-center gap-10">
         {footerNavElements.map((item) => (
           <li key={item.id}>
-            <div className="w-[190px] px-5">
+            <div className=" w-[150px] md:w-[190px] px-5">
               <h1 className="font-bold mb-2 sm:text-lg text-base">
                 {item.title}
               </h1>

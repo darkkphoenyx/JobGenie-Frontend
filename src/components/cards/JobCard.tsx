@@ -145,12 +145,12 @@ export const JobCard = () => {
               </div>
               {item.link ? (
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <button className="bg-black text-white font-medium text-sm sm:text-base py-2 sm:py-3 w-full rounded-3xl transition-all hover:bg-white hover:text-black border border-black">
+                  <button className="bg-black text-white font-medium text-sm sm:text-base py-2 sm:py-3 w-full rounded-3xl active:translate-y-1 transition-all hover:bg-white hover:text-black border border-black">
                     Apply Now
                   </button>
                 </a>
               ) : (
-                <button className="bg-gray-400 text-white font-medium text-sm sm:text-base py-2 sm:py-3 w-full rounded-3xl cursor-not-allowed">
+                <button className="bg-gray-400 text-white font-medium text-sm sm:text-base py-2 sm:py-3 w-full rounded-3xl cursor-not-allowed ">
                   Not Available
                 </button>
               )}
