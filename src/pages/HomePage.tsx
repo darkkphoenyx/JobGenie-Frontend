@@ -26,24 +26,24 @@ export default function HomePage() {
               Unlock Your True Potential And Discover A World Of Opportunities
               That Align With Your Skills, Interests, And Aspirations
             </p>
-            <div className="company-logos flex justify-around md:justify-between flex-wrap items-center mt-4">
+            <div className="company-logos flex justify-center md:justify-between flex-wrap items-center mt-4 gap-x-10 gap-y-2">
               <img
                 className="h-5 sm:h-7"
                 src="/assets/spotify.webp"
                 alt="spotify logo"
               />
               <img
-                className="h-9 sm:h-11"
+                className="h-5 sm:h-7"
                 src="/assets/microsoft.webp"
                 alt="microsoft logo"
               />
               <img
-                className="h-4 sm:h-5"
-                src="/assets/macfee.webp"
+                className="h-5 sm:h-7"
+                src="/assets/mcafee.webp"
                 alt="macfee logo"
               />
               <img
-                className="h-5 sm:h-7 mt-1 ml-1"
+                className="h-5 sm:h-7"
                 src="/assets/google.webp"
                 alt="google logo"
               />
