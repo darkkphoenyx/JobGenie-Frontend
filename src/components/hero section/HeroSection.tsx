@@ -14,7 +14,7 @@ function ImageBlock({ src, alt, size, containerStyle }: ImageBlockProps) {
 }
 
 export default function HeroSection() {
-  const header = "font-medium text-3xl md:text-5xl sm:text-3xl my-5";
+  const header = "font-medium text-5xl md:text-6xl lg:text-7xl my-5";
 
   return (
     <div className="main text-center h-max mx-auto flex justify-center w-full bg-[url(/assets/background.webp)] bg-no-repeat bg-center bg-cover">
@@ -61,7 +61,7 @@ export default function HeroSection() {
             that align with your skills, interests, and aspirations
           </p>
         </div>
-        
+
         <div className="mt-5 search-box bg-white rounded-2xl w-full max-w-screen-lg mx-auto shadow-2xl px-3 py-2 border flex flex-col md:flex-row md:justify-between md:items-center md:space-x-4">
           <div className="find-job flex items-center mb-2 md:mb-0">
             <img className="h-4" src="/assets/search.svg" alt="search icon" />
@@ -89,8 +89,6 @@ export default function HeroSection() {
             Search
           </button>
         </div>
-
-        
       </div>
 
       <div className="right-section section pr-10 hidden  md:flex flex-col justify-between mt-20 w-[250px] h-[400px]">
