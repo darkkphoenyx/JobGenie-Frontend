@@ -8,13 +8,13 @@ export default function RegistrationPage() {
 
       <div className="relative z-10 h-full grid grid-cols-1 md:grid-cols-2">
         {/* Left Side: Form Section */}
-        <div className="bg-white/80 flex flex-col pt-4 md:pt-2 items-center p-1 md:p-0 shadow-2xl rounded-md md:rounded-r-3xl">
+        <div className="bg-white/80 flex flex-col pt-4 md:pt-2 items-center justify-center  shadow-2xl rounded-md md:rounded-r-3xl">
           <div className="w-full max-w-md">
-            <div className="mb-6 text-center">
+            <div className="mb-6 text-center md:block flex flex-col justify-center items-center">
               <h1 className="text-3xl md:text-4xl font-bold text-[--color-text]">
                 Employee Registration
               </h1>
-              <p className="text-gray-500 text-xs md:text-sm mt-2">
+              <p className="text-gray-500 text-xs md:text-sm mt-2 w-4/5 md:w-full">
                 Register to find a job and get access to all services for
                 employees.
               </p>
@@ -30,7 +30,7 @@ export default function RegistrationPage() {
               </Link>
             </div>
           </div>
-          <div className=" block md:hidden mt-5 active:translate-y-1 transition-all">
+          <div className=" block md:hidden active:translate-y-1 transition-all mt-5">
             <Link
               to={"/"}
               className="bg-black/90 text-white py-2 px-4 rounded-full text-center"
