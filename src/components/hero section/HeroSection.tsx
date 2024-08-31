@@ -39,9 +39,9 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="mid-section md:h-[88vh] h-max pt-20">
+      <div className="mid-section md:h-[88vh] h-max pt-10 md:pt-20">
         <span className="flex justify-center items-center flex-wrap">
-          <span className="font-medium flex items-center text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl sm:px-5 px-1 py-2 mb-5 text-sm md:text-md sm:text-base">
+          <span className="font-medium flex items-center text-[--color-text] bg-blue-100/30 shadow-2xl border border-[--color-text] rounded-3xl sm:px-5 px-1 py-2 mb-2 md:mb-3 text-sm md:text-md sm:text-base">
             <img
               className="sm:pr-3 pr-1 sm:h-6 h-4"
               src="/assets/thumbs-up.svg"
@@ -56,7 +56,7 @@ export default function HeroSection() {
             <br />
             Every Step of the Way
           </h1>
-          <p className="w-4/5 mx-auto text-gray-500 text-sm sm:text-lg">
+          <p className="w-4/5 mx-auto text-gray-500 text-sm sm:text-lg md:my-3">
             Unlock your true potential and discover a world of opportunities
             that align with your skills, interests, and aspirations
           </p>
