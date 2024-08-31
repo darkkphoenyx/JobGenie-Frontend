@@ -87,7 +87,7 @@ export const JobCard = () => {
             Job Search.
           </h2>
         </div>
-        <p className="mt-5 text-gray-500/80 w-4/5 sm:w-2/5 mx-auto text-sm sm:text-lg">
+        <p className="mt-5 text-gray-500/80 w-4/5 lg:w-4/5 mx-auto text-sm sm:text-lg">
           Unlock your true potential and discover a world of opportunities that
           align with your skills, interests, and aspirations.
         </p>
