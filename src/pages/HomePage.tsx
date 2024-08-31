@@ -26,7 +26,7 @@ export default function HomePage() {
               Unlock Your True Potential And Discover A World Of Opportunities
               That Align With Your Skills, Interests, And Aspirations
             </p>
-            <div className="company-logos flex justify-between flex-wrap items-center mt-4">
+            <div className="company-logos flex justify-around md:justify-between flex-wrap items-center mt-4">
               <img
                 className="h-5 sm:h-7"
                 src="/assets/spotify.webp"
@@ -43,7 +43,7 @@ export default function HomePage() {
                 alt="macfee logo"
               />
               <img
-                className="h-5 sm:h-7"
+                className="h-5 sm:h-7 mt-1 ml-1"
                 src="/assets/google.webp"
                 alt="google logo"
               />
